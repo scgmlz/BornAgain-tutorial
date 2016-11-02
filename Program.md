@@ -44,11 +44,11 @@
 
 10:10 — 10:25 Main concept of fitting (Gennady)
 
-10:25 — 10:55 GUI basic fitting tutorial (?)
+10:25 — 10:55 GUI basic fitting tutorial (Marina)
 
 10:55 — 11:15 Coffee break
 
-11:15 — 11:40 Python basic fitting tutorial
+11:15 — 11:40 Python basic fitting tutorial (Marina)
 
 11:40 — 12:20 Fitting game (Gennady)
 
