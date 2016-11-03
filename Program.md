@@ -44,14 +44,18 @@
 
 #### 14:00 — 17:00 User talks and discussion
 
+Foundations, hard matter:
 - 30' Artur: Real-world challenges in grazing incidence experiments.
 - 25' Emmanuel: Polarized GISANS from lateral correlations of the spin misalignment.
-- 25' Deniza: Towards the geometrical structure of ultrasmall deposited Au9 nanoclusters using GISAXS.
 - 10' Dieter: Dy/Y multilayers and off-specular magnetic scattering.
-- 15' Jacqui: Understanding dye aggregation in dye-sensitized solar cells with GIWAXS and GISAXS
 - 15' Henrich: Resonator
 - 15' Mika: GISAXS Measurements and Reconstruction of Structure Parameters.
+
+Soft matter:
+- 25' Deniza: Towards the geometrical structure of ultrasmall deposited Au9 nanoclusters using GISAXS.
+- 15' Jacqui: Understanding dye aggregation in dye-sensitized solar cells with GIWAXS and GISAXS
 - 15' Olaf: Reverse hexagonal phase of selfReverse hexagonal phase of self-assembled lipidic systems at an interface-assembled lipidic systems at an interface.
 
 (sum: 2h30)
 
+- 10' Concluding remarks (Joachim)
