@@ -40,7 +40,7 @@
 - 40' BornAgain on GitHub. Working with BornAgain on Linux. Making movies on Linux. 
 - 20' Coffee break
 
-13:00 — 14:00 Lunch
+13:00 — 14:00 Lunch, posters
 
 #### 14:00 — 17:00 User talks and discussion
 
@@ -52,5 +52,6 @@
 - 15' Henrich: Resonator
 - 15' Mika: GISAXS Measurements and Reconstruction of Structure Parameters.
 - 15' Olaf: Reverse hexagonal phase of selfReverse hexagonal phase of self-assembled lipidic systems at an interface-assembled lipidic systems at an interface.
+
 (sum: 2h30)
 
