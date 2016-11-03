@@ -1,7 +1,9 @@
 # BornAgain School and User meeting Program
 
 ## 21.11.2016
-#### 10:00 — 13:00 Python tutorial + 20 min coffee creak (Jonathan)
+#### 10:00 — 13:00 Python tutorial (Jonathan)
+
+- 20' coffee break
 
 #### 13:00 — 14:00 Lunch, registration, poster mounting
 
