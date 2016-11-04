@@ -46,7 +46,7 @@
 
 Foundations, hard matter:
 - 25' Emmanuel: Polarized GISANS from lateral correlations of the spin misalignment.
-- 10' Dieter: Dy/Y multilayers and off-specular magnetic scattering.
+- 15' Dieter: Dy/Y multilayers and off-specular magnetic scattering.
 - 15' Henrich: Resonator
 - 15' Mika: GISAXS Measurements and Reconstruction of Structure Parameters.
 
@@ -59,5 +59,5 @@ Outlook:
 - 25' Artur: Real-world challenges in grazing incidence experiments.
 - 15' Final disussion, concluding remarks (Joachim)
 
-(sum: 2h40)
+(sum: 2h45)
 
