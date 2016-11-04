@@ -45,7 +45,7 @@
 #### 14:00 — 17:00 User talks and discussion
 
 Foundations, hard matter:
-- 30' Artur: Real-world challenges in grazing incidence experiments.
+- 25' Artur: Real-world challenges in grazing incidence experiments.
 - 25' Emmanuel: Polarized GISANS from lateral correlations of the spin misalignment.
 - 10' Dieter: Dy/Y multilayers and off-specular magnetic scattering.
 - 15' Henrich: Resonator
