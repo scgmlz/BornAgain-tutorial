@@ -51,7 +51,7 @@ Foundations, hard matter:
 - 15' Mika: GISAXS Measurements and Reconstruction of Structure Parameters.
 
 Soft matter:
-- 25' Deniza: Towards the geometrical structure of ultrasmall deposited Au9 nanoclusters using GISAXS.
+- 25' Deniza: Towards the geometrical structure of ultrasmall deposited Au9 nanoclusters.
 - 15' Jacqui: Understanding dye aggregation in dye-sensitized solar cells with GIWAXS and GISAXS.
 - 15' Olaf: Reverse hexagonal phase of self-assembled lipidic systems.
 
