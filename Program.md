@@ -28,16 +28,15 @@
 ## 22.11.2016
 #### 09:00 — 13:00 BornAgain tutorial
 
-- 15' Introduction to sample parameters (?)
-- 10' Beam divergence (?)
-- 20' Polarised neutrons (Walter)
+- 15' GUI basic fitting tutorial (Marina)
+- 15' Main concept of fitting (Gennady)
+- 15' Introduction to sample parameters (Gennady)
 - 15' Types of detectors in BornAgain (Gennady)
 - 10' Import of user data (Gennady)
-- 15' Main concept of fitting (Gennady)
-- 30' GUI basic fitting tutorial (Marina)
-- 25' Python basic fitting tutorial (Marina)
-- 40' Fitting game (Gennady)
-- 40' BornAgain on GitHub. Working with BornAgain on Linux. Making movies on Linux. 
+- 25' Python basic fitting tutorial, SampleBuilder (Gennady)
+- 40' Fitting game (Marina)
+- 20' Polarised neutrons (Walter)
+- 40' BornAgain on GitHub. Working with BornAgain on Linux.
 - 20' Coffee break
 
 13:00 — 14:00 Lunch, posters
