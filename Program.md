@@ -16,8 +16,8 @@
 - 15' Coffee break
 - 15' Particle positioning, rotation, embedded particles (Marina)
 - 15' Particles with size distribution. Adding size distribution (Marina)
-- 15' Roughness. Adding roughness.(Walter)
 - 25' Interference functions and approximations. Adding interference functions (Walter)
+- 15' Roughness. Adding roughness.(Walter)
 
 #### 17:00 — 18:00 Poster session
 
