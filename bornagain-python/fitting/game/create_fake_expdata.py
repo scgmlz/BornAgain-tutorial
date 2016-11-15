@@ -24,37 +24,37 @@ def get_sample():
     :return: sample
     """
     # Defining Materials
-    m_si = ba.HomogeneousMaterial("Air", 0.0, 0.0)
-    m_air = ba.HomogeneousMaterial("Si", 7.6e-06, 1.7e-07)
+    m_air = ba.HomogeneousMaterial("Air", 0.0, 0.0)
+    m_si = ba.HomogeneousMaterial("Si", 7.6e-06, 1.7e-07)
 
     # Defining Layers
-    l_si = ba.Layer(m_si)
     l_air = ba.Layer(m_air)
+    l_si = ba.Layer(m_si)
 
     # Defining Form Factor
     ff = ba.FormFactorBox(20.0*nm, 20.0*nm, 20.0*nm)
 
     # Defining Particles
-    particle = ba.Particle(m_air, ff)
+    particle = ba.Particle(m_si, ff)
 
-    # Defining Interference Functions
+    # Defining Interference Function
     interference = ba.InterferenceFunction2DLattice.createSquare(45.0*nm, 45*deg)
     pdf = ba.FTDecayFunction2DCauchy(1000.0*nm, 1000.0*nm)
     interference.setDecayFunction(pdf)
 
-    # Defining Particle Layouts and adding Particles
+    # Defining Particle Layout and adding Particles
     layout = ba.ParticleLayout()
     layout.addParticle(particle, 1.0)
     layout.addInterferenceFunction(interference)
 
-    # Adding layouts to layers
-    l_si.addLayout(layout)
+    # Adding layout to layer
+    l_air.addLayout(layout)
 
-    # Defining Multilayers
-    multiLayer = ba.MultiLayer()
-    multiLayer.addLayer(l_si)
-    multiLayer.addLayer(l_air)
-    return multiLayer
+    # Defining Multilayer
+    multi_layer = ba.MultiLayer()
+    multi_layer.addLayer(l_air)
+    multi_layer.addLayer(l_si)
+    return multi_layer
 
 
 def get_simulation():
