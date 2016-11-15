@@ -1,0 +1,264 @@
+\documentclass[hyperref={colorlinks, linkcolor=blue, urlcolor=blue}]{beamer}
+\usetheme{MLZ-JCNS}
+%\usetheme{MLZ-GEMS}
+\usepackage{amssymb}
+\usepackage{listings}
+%%\usepackage[colorlinks]{hyperref}
+
+%\footinfo{#3}%
+
+\lstset{basicstyle=\ttfamily\normalsize} % for code listings
+
+\lstset{%%language=bash,
+  backgroundcolor=\color{white!97!black},
+  keywordstyle=\color{blue},
+  stringstyle=\color{red!60!black},
+  commentstyle=\color{green!60!black},
+  morecomment=[l][\color{magenta}]{\#},
+  showstringspaces=false
+}
+
+\lstset{language=C++, morecomment=[l][\color{magenta}]{\#}}
+
+
+%% \lstset{language=Python,
+%%                 keywordstyle=\color{blue},
+%%                 stringstyle=\color{red},
+%%                 commentstyle=\color{green},
+%%                 morecomment=[l][\color{magenta}]{\#}
+%% }
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%   title                                                                   %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\title{Introduction to Python}
+\author{Jonathan Fisher \\ Scientific computing group \\ JCNS at MLZ} 
+\date{November  21, 2016}
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\part{data formats} 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\maketitle
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\part{Setting up a Python environment} 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+  \frametitle{Useful links}
+  %% Slides, example source code, etc. may be obtained at \\
+  BornAgain: \\
+  \url{http://bornagainproject.org} \\
+  \url{https://github.com/scgmlz/BornAgain-tutorial}
+  \bigskip
+
+  Python official tutorial: \\ \url{https://docs.python.org/3/tutorial/}
+  \bigskip
+
+  Anaconda Python: \\ \url{https://www.continuum.io/}
+  \bigskip
+  
+  PyCharm IDE: \\ \url{https://www.jetbrains.com/pycharm/}
+  \bigskip
+
+  \textbf{BornAgain Win/Mac requires Python 2.7}
+  \end{frame}
+
+\begin{frame}[fragile]
+  \frametitle{Checking the Python Environment}
+
+  Check the Python version:
+  \begin{lstlisting}[language=bash]
+ $ python --version
+ Python 3.5.2
+  \end{lstlisting}
+
+  Check for numpy and matplotlib:
+  \begin{lstlisting}
+ $ python -c "import numpy"
+ $ python -c "import matplotlib"
+  \end{lstlisting}
+  
+  Check for BornAgain Python module:
+    \begin{lstlisting}
+ $ python -c "import bornagain"
+    \end{lstlisting}
+
+    
+\end{frame}
+
+\begin{frame}[fragile]
+  \frametitle{Running Python}
+
+  Direct from command line:
+
+  \begin{lstlisting}[language=bash]
+ $ python -c  "print 'hello, world'"
+ hello, world
+  \end{lstlisting}
+
+  \bigskip
+
+  Run script from command line:
+  
+  \begin{lstlisting}[language=bash]
+ $ echo "print 'hello, world'" > hello.py
+ $ python hello.py 
+ hello, world
+  \end{lstlisting}  
+\end{frame}
+
+\begin{frame}[fragile]
+  \frametitle{Running Python}
+
+  Default interactive interpreter:
+
+  \begin{lstlisting}[language=Python]
+ $ python
+ >>> x = 5
+ >>> x*x
+ 25
+  \end{lstlisting}
+
+  \bigskip
+
+  IPython interactive interpreter:
+    \begin{lstlisting}[language=Python]
+ $ ipython
+ In [1]: x = 5
+ In [2]: x*x
+ Out[2]: 25
+  \end{lstlisting}
+  
+\end{frame}
+
+
+\begin{frame}[fragile]
+  \frametitle{Running Python}
+
+  IPython interactive notebook:
+
+  \begin{lstlisting}[language=bash]
+ $ ipython notebook
+  \end{lstlisting}
+  \bigskip
+  or Jupyter interactive notebook:
+  \begin{lstlisting}[language=bash]
+ $ jupyter notebook
+  \end{lstlisting}
+  \bigskip
+  Notebook support is included by default with Anaconda, and can be installed
+  as an optional package on most Linux distros.
+
+  \bigskip
+
+  Lastly, can run within PyCharm IDE.
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\part{Basic Data Types} 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+  \frametitle{Basic Data Types}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\part{Flow Control} 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+  \frametitle{Flow Control}
+\end{frame}
+
+\begin{frame}
+  \frametitle{FizzBuzz}
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\part{Modules} 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+  \frametitle{Modules}
+\end{frame}
+
+\begin{frame}
+  \frametitle{numpy}
+\end{frame}
+
+\begin{frame}
+  \frametitle{matplotlib}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Plotting Exercise}
+  Create a colormap plot of the function
+  \[ f(x,y) = |\mathrm{sinc}(x+\sqrt{-1}y)| \]
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\part{Classes} 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+  \frametitle{Classes}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Inheritance}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Polymorphism}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Exercise}
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\part{Bonus Material} 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}
+  \frametitle{ctypes}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Python 2 vs. 3}
+\end{frame}
+
+\begin{frame}
+  \frametitle{git and github}
+\end{frame}
+
+\begin{frame}[fragile]
+  \frametitle{Building BornAgain with Python 3 support}
+    \begin{lstlisting}[language=bash]
+ $ git clone \
+ > https://github.com/scgmlz/BornAgain.git
+ $ mkdir build; cd build
+ $ cmake .. \
+ > -DCMAKE_BUILD_TYPE=Release \
+ > -DBORNAGAIN_USE_PYTHON3=ON
+ $ make && make install
+    \end{lstlisting}
+
+
+
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
