@@ -9,16 +9,19 @@
 
 \lstset{basicstyle=\ttfamily\normalsize} % for code listings
 
-\lstset{%%language=bash,
+\lstset{language=Python,
   backgroundcolor=\color{white!97!black},
-  keywordstyle=\color{blue},
+  keywordstyle=\color{green!40!black},
+  identifierstyle=\color{blue!40!black},
   stringstyle=\color{red!60!black},
   commentstyle=\color{green!60!black},
   morecomment=[l][\color{magenta}]{\#},
-  showstringspaces=false
+  morekeywords={print, import, as, from},
+  showspaces=false,
+  showstringspaces=false,
+  tabsize=4,
+  deletekeywords={sum},
 }
-
-\lstset{language=C++, morecomment=[l][\color{magenta}]{\#}}
 
 
 %% \lstset{language=Python,
@@ -179,6 +182,30 @@
 
 \begin{frame}
   \frametitle{FizzBuzz}
+
+  "Write a program that prints the numbers from 1 to 100. But for multiples of three print “Fizz”
+  instead of the number and for the multiples of five print “Buzz”. For numbers which are multiples
+  of both three and five print “FizzBuzz”."
+
+  \url{http://wiki.c2.com/?FizzBuzzTest}
+\end{frame}
+
+\begin{frame}[fragile]
+  \frametitle{FizzBuzz Solution}
+  \begin{lstlisting}[language=Python]
+ for i in range(1, 101):
+     multiple_of_3 = (i%3)==0
+     multiple_of_5 = (i%5)==0
+     if multiple_of_3 and multiple_of_5:
+         print 'FizzBuzz'
+     elif multiple_of_3:
+         print 'Fizz'
+     elif multiple_of_5:
+         print 'Buzz'
+     else:
+         print i
+  \end{lstlisting}
+
 \end{frame}
 
 
@@ -186,22 +213,147 @@
 \part{Modules} 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{frame}
+\begin{frame}[fragile]
   \frametitle{Modules}
+
+  Load external modules (built-in or user-defined) via import:
+  \begin{lstlisting}{language=Python}
+ import math 
+ math.pi
+ 3.141592653589793 
+  \end{lstlisting}
+  Rename imported modules with as:
+  \begin{lstlisting}{language=Python}
+ >>> import math as m
+ >>> m.sin(m.pi / 2.0)
+ 1.0
+  \end{lstlisting}
 \end{frame}
 
-\begin{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\part{numpy} 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}[fragile]
   \frametitle{numpy}
+  numpy is used for arrays of numbers:
+  \begin{lstlisting}
+ >>> import numpy as np
+ >>> x = np.array([1,2,3])
+ >>> x.sum()
+ 6
+ >>> x.mean()
+ 2.0
+ >>> x[0] + x[2]
+ 4
+  \end{lstlisting}
+\end{frame}
+
+\begin{frame}[fragile]
+  \frametitle{numpy}
+  multidimensional arrays:
+  \begin{lstlisting}
+ >>> x = np.array([[1,2],[3,4]])
+ >>> x.sum()
+ 10
+ >>> x.sum(0)
+ array([4, 6])
+ >>> x.sum(1)
+ array([3, 7])
+  \end{lstlisting}
+\end{frame}
+
+\begin{frame}[fragile]
+  \frametitle{numpy}
+  generating arrays:
+  \begin{lstlisting}
+ >>> np.zeros(3)
+ array([ 0.,  0.,  0.])
+ >>> np.ones(4)
+ array([ 1.,  1.,  1.,  1.])
+ >>> np.random.rand(2)
+ array([ 0.81387462,  0.41867461])
+ >>> np.linspace(-1, 1, num=4)
+ array([-1., -0.33333333, 0.33333333, 1.])
+  \end{lstlisting}
+\end{frame}
+
+\begin{frame}[fragile]
+  \frametitle{operating on numpy arrays}
+  \begin{lstlisting}
+ >>> x = np.linspace(-math.pi, math.pi, 5)
+ >>> np.sin(x)
+ array([ 0., -1., 0., 1., 0.])
+ >>> np.cos(x)
+ array([ -1., 0., 1., 0., -1.])
+ >>> np.abs(np.sin(x) + np.cos(x))
+ array([ 1., 1., 1., 1., 1.])
+  \end{lstlisting}
+\end{frame}
+
+\begin{frame}[fragile]
+  \frametitle{array manipulation routines}
+  numpy.flipud, fliplr, transpose, rot90, flatten, ravel
+  \begin{lstlisting}
+ >>> ....
+  \end{lstlisting}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\part{matplotlib} 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{frame}[fragile]
+  \frametitle{matplotlib}
+  Plotting a function of 1 variable:
+  \begin{lstlisting}
+ >>> from matplotlib import pyplot as plt
+ >>> x = np.linspace(-2, 2)
+ >>> y = 2 - 2*x**2 + x**4
+ >>> plt.plot(x, y)
+ >>> plt.show()
+  \end{lstlisting}
+\end{frame}
+
+\begin{frame}[fragile]
+  \frametitle{matplotlib}
+  Plotting a function of 2 variables:
+  \begin{lstlisting}
+ >>> x = np.linspace(-2, 2, num=200)
+ >>> y = np.linspace(-2, 2, num=200)
+ >>> xx, yy = np.meshgrid(x, y)
+ >>> z = xx + xx**2 - yy
+ >>> plt.pcolormesh(x, y, z, shading='gouraud')
+ >>> plt.show()
+  \end{lstlisting}
 \end{frame}
 
 \begin{frame}
   \frametitle{matplotlib}
+  For a gallery of plots see
+  \url{http://matplotlib.org/gallery.html} 
 \end{frame}
 
 \begin{frame}
   \frametitle{Plotting Exercise}
-  Create a colormap plot of the function
-  \[ f(x,y) = |\mathrm{sinc}(x+\sqrt{-1}y)| \]
+  Consider the function 
+  \[ f(x,y) = \mathrm{log}(x+\sqrt{-1}y)| \]
+  for $-2 \leq x,y \leq 2$.
+  Create colormap plots of the magnitue, real, and imaginary parts of $f$.
+\end{frame}
+
+\begin{frame}[fragile]
+  \frametitle{Exercise Solution}
+
+  \begin{lstlisting}
+ >>> x = np.linspace(-2, 2, num=100)
+ >>> y = np.linspace(-2, 2, num=100)
+ >>> z = np.array([ [ u-1.0j*v for u in x ] for v in y])
+ >>> logz = np.log(z)
+ >>> f_mag = np.abs(logz)
+ >>> f_real = np.real(logz)
+ >>> f_imag = np.imag(logz)
+  \end{lstlisting}
 \end{frame}
 
 
