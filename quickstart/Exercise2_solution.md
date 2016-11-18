@@ -68,7 +68,7 @@ The full `getSample()` function for simulation of particles on the bottom of the
 def getSample():
     # Defining Materials
     material_3 = ba.HomogeneousMaterial("Si", 7.6e-06, 1.7e-07)
-    material_2 = ba.HomogeneousMaterial("Polymer", 1.99999999995e-06, 1.3e-08)
+    material_2 = ba.HomogeneousMaterial("Polymer", 2.0e-06, 1.3e-08)
     material_1 = ba.HomogeneousMaterial("Air", 0.0, 0.0)
 
     # Defining Layers
