@@ -30,7 +30,7 @@ particle_1.setPosition(particle_1_position)
 
 ```
 ### Compare simulation results.
-![New polymer layer](img/ex2_fig2.png)
+![Compare results](img/ex2_fig2.png)
 
 ### Create an intermediate layer
 ![New polymer layer](img/ex2_fig3.png)
@@ -62,13 +62,9 @@ multiLayer_1.addLayer(layer_3)
 
 The value $Z = 10$ nm is suitable for the top layer, but not for the intermediate layer. For the intermediate layer correct values are in the range from `-1*particle height` (particle touches the top of the layer) to `-1*layer thickness` (particle is ob the bottom of the layer). In the present example the correct range for $Z$ is from -10 to -50 nm.
 
-The full Python script for simulation of particles on the bottom of the intermediate polymer layer should look like this:
+The full `getSample()` function for simulation of particles on the bottom of the intermediate polymer layer should look like this:
 
 ```python
-import numpy
-import bornagain as ba
-from bornagain import deg, angstrom, nm, kvector_t
-
 def getSample():
     # Defining Materials
     material_3 = ba.HomogeneousMaterial("Si", 7.6e-06, 1.7e-07)
@@ -102,36 +98,6 @@ def getSample():
     multiLayer_1.addLayer(layer_2)
     multiLayer_1.addLayer(layer_3)
     return multiLayer_1
-
-def getSimulation():
-    simulation = ba.GISASSimulation()
-    simulation.setDetectorParameters(800, -1.0*deg, 1.0*deg, 800, 0.0*deg, 2.0*deg)
-    
-    simulation.setBeamParameters(0.154*nm, 0.2*deg, 0.0*deg)
-    simulation.setBeamIntensity(1.0e+08)
-    return simulation
-
-
-def plot(intensities):
-    import matplotlib.colors
-    from matplotlib import pyplot as plt
-    im = plt.imshow(intensities.getArray(), norm=matplotlib.colors.LogNorm(1, intensities.getMaximum()), extent=[-1.0*deg, 1.0*deg, 0.0*deg, 2.0*deg]) 
-    plt.colorbar(im)
-    plt.show()
-
-
-def simulate():
-    # Run Simulation
-    sample = getSample()
-    simulation = getSimulation()
-    simulation.setSample(sample)
-    simulation.runSimulation()
-    return simulation.getIntensityData()
-
-
-if __name__ == '__main__': 
-    ba.simulateThenPlotOrSave(simulate, plot)
-
 ```
 
 ### Vary particle positions in the intermediate layer: place particles on the bottom, in the middle, on the top of the layer.

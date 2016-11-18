@@ -28,13 +28,9 @@ particle_1_rotation = ba.RotationX(45.0*deg)
 particle_1.setRotation(particle_1_rotation)
 ```
 
-The full Python script will look like:
+The full `getSample()` function will look like:
 
 ```python
-import numpy
-import bornagain as ba
-from bornagain import deg, angstrom, nm, kvector_t
-
 def getSample():
     # Defining Materials
     material_1 = ba.HomogeneousMaterial("Air", 0.0, 0.0)
@@ -70,35 +66,6 @@ def getSample():
     multiLayer_1.addLayer(layer_2)
     multiLayer_1.addLayer(layer_3)
     return multiLayer_1
-
-def getSimulation():
-    simulation = ba.GISASSimulation()
-    simulation.setDetectorParameters(800, -1.0*deg, 1.0*deg, 800, 0.0*deg, 2.0*deg)
-    
-    simulation.setBeamParameters(0.154*nm, 0.2*deg, 0.0*deg)
-    simulation.setBeamIntensity(1.0e+08)
-    return simulation
-
-
-def plot(intensities):
-    import matplotlib.colors
-    from matplotlib import pyplot as plt
-    im = plt.imshow(intensities.getArray(), norm=matplotlib.colors.LogNorm(1, intensities.getMaximum()), extent=[-1.0*deg, 1.0*deg, 0.0*deg, 2.0*deg]) 
-    plt.colorbar(im)
-    plt.show()
-
-
-def simulate():
-    # Run Simulation
-    sample = getSample()
-    simulation = getSimulation()
-    simulation.setSample(sample)
-    simulation.runSimulation()
-    return simulation.getIntensityData()
-
-
-if __name__ == '__main__': 
-    ba.simulateThenPlotOrSave(simulate, plot)
 
 ```
 
