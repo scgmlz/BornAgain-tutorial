@@ -17,17 +17,17 @@ def RunSimulation():
     
     # build and run experiment
     simulation = ba.GISASSimulation()
-    simulation.setDetectorParameters(100, 0.0*deg, 6.0*deg, 100, 0.0*deg, 6.0*deg)
-    simulation.setBeamParameters(6.*angstrom, 0.5*deg, 0.0*deg)
+    simulation.setDetectorParameters(100, -3.0*deg, 3.0*deg, 100, 0.0*deg, 6.0*deg)
+    simulation.setBeamParameters(1.*angstrom, 0.5*deg, 0.0*deg)
     simulation.setBeamIntensity(1e8)
 
     # run simulation
     simulation.setSample(sample)
-    unit_z = ba.kvector_t(0.0, 0.0, 1.0)
-    beampol = ba.kvector_t(0.0, 0.0, -1.0)
+    unit_y = ba.kvector_t(0.0, 1.0, 0.0)
+    beampol = ba.kvector_t(0.0, 1.0, 0.0)
 
     simulation.setBeamPolarization(beampol)
-    simulation.setAnalyzerProperties(unit_z, 1.0, 0.5)
+    simulation.setAnalyzerProperties(unit_y, -1.0, 0.5)
 
     simulation.runSimulation()
 
