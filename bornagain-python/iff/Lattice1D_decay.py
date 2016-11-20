@@ -4,7 +4,7 @@ from scipy.stats import norm
 
 
 class Lattice1D_decay:
-    """A class that represents a disordered one dimensional lattice"""
+    """A class that represents a disordered one dimensional lattice with a decay function"""
     def __init__(self, mean_separation, decay_length):
         self.mean_separation = mean_separation
         self.decay_length = decay_length

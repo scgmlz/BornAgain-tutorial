@@ -1,6 +1,6 @@
-'''
+"""
 Simulation demo: magnetic cylinders
-'''
+"""
 
 import matplotlib
 from matplotlib import pyplot as plt

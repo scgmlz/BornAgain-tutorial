@@ -1,8 +1,10 @@
+"""
+Generate roughness profiles
+"""
+
 from __future__ import division
 import numpy as np
 import matplotlib.pyplot as plt
-
-__author__ = 'herck'
 
 
 def generate_profile(length, nbr_samples, sigma, corr_length, hurst_par):

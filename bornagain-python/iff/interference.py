@@ -9,10 +9,10 @@ from Lattice1D_decay import Lattice1D_decay
 from Paracrystal import Paracrystal1D
 from Lattice1D import Lattice1D
 
-d, sig, declength = 1.0, 0.2, 4.0
+d, sig, declength = 1.0, 0.2, 8.0
 x_min, x_max = -10.0, 10.0
 accuracy = 5.0
-n_samples = 1000
+n_samples = 200
 
 
 def generate_samples(lat, min_pos, max_pos, samples):
