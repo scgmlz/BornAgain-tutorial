@@ -1,6 +1,6 @@
 """
 Shows chi2(p1, p2) objective function in two parameter space
-(radius of spheres, lattice length). Demonstrates two local minima.
+(radius of spheres, lattice length). Serves as an illustration to local minima problem.
 """
 import bornagain as ba
 from bornagain import deg, angstrom, nm
