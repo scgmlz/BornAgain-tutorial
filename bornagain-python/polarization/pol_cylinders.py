@@ -27,7 +27,7 @@ def RunSimulation():
     beampol = ba.kvector_t(0.0, 1.0, 0.0)
 
     simulation.setBeamPolarization(beampol)
-    simulation.setAnalyzerProperties(unit_y, -1.0, 0.5)
+    simulation.setAnalyzerProperties(unit_y, 1.0, 0.5)
 
     simulation.runSimulation()
 
@@ -38,15 +38,14 @@ def RunSimulation():
 
 def CreateSample():
     # create mesocrystal
-    magnetic_field = ba.kvector_t(3.4, 3.4, 3.4)
-    particle_material =ba.HomogeneousMagneticMaterial("particle",
-                    2.84e-5, 4.7e-7, magnetic_field)
+    magnetic_field = ba.kvector_t(1.0, 1.0, 1.0)
+    particle_material = ba.HomogeneousMagneticMaterial("particle", 2e-5, 4e-7, magnetic_field)
 
     # Create multilayer
     multi_layer = ba.MultiLayer()
 
     air_material = ba.HomogeneousMaterial("Air", 0.0, 0.0)
-    substrate_material = ba.HomogeneousMaterial("Substrate", 7.57e-6, 1.73e-7)
+    substrate_material = ba.HomogeneousMaterial("Substrate", 7e-6, 1.8e-7)
     air_layer = ba.Layer()
     air_layer.setMaterial(air_material)
     substrate_layer = ba.Layer()
