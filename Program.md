@@ -26,8 +26,8 @@
 ## 22.11.2016
 #### 09:00 — 13:00 BornAgain tutorial
 
-- 15' GUI basic fitting tutorial (Marina)
 - 15' Main concept of fitting (Gennady)
+- 15' GUI basic fitting tutorial (Marina)
 - 15' Introduction to sample parameters (Gennady)
 - 15' Types of detectors in BornAgain (Gennady)
 - 10' Import of user data (Gennady)
