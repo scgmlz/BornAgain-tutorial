@@ -28,12 +28,13 @@
 
 - 15' Main concept of fitting (Gennady)
 - 15' GUI basic fitting tutorial (Marina)
+- 20' Fitting game GUI (Marina)
 - 15' Introduction to sample parameters (Gennady)
 - 15' Types of detectors in BornAgain (Gennady)
 - 10' Import of user data (Gennady)
 - 20' Coffee break
 - 25' Python basic fitting tutorial, SampleBuilder (Gennady)
-- 40' Fitting game (Marina)
+- 20' Fitting game Python (Marina)
 - 20' Polarised neutrons (Walter)
 - 40' BornAgain on GitHub. Working with BornAgain on Linux.
 
@@ -45,11 +46,10 @@ Foundations, hard matter:
 
 - 25' Emmanuel: Polarized GISANS from lateral correlations of the spin misalignment.
 - 15' Dieter: Dy/Y multilayers and off-specular magnetic scattering.
-- 15' Henrich: Resonator
 - 15' Mika: GISAXS Measurements and Reconstruction of Structure Parameters.
 
 Soft matter:
-
+- 15' Henrich: Resonator
 - 20' Deniza: Towards the geometrical structure of ultrasmall deposited Au9 nanoclusters.
 - 20' Jacqui: Understanding dye aggregation in dye-sensitized solar cells with GIWAXS and GISAXS.
 - 15' Olaf: Reverse hexagonal phase of self-assembled lipidic systems.
