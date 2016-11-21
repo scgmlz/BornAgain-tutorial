@@ -2,7 +2,6 @@
 Demonstration of statistical properties of particle locations and comparison with interference functions
 """
 
-import math
 import matplotlib.pyplot as plt
 
 from Lattice1D_decay import Lattice1D_decay
