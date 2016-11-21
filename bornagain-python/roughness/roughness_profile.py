@@ -20,7 +20,7 @@ def generate_profile(length, nbr_samples, sigma, corr_length, hurst_par):
     """
     # generate iid normal array z:
     step = length/(nbr_samples-1)
-    n_samples = round((length+2.0*corr_length)/step + 1)
+    n_samples = int(round((length+2.0*corr_length)/step + 1))
     z = np.random.normal(0, 1.0, n_samples)
 
     # generate symmetric covariance array:
