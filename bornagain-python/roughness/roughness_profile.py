@@ -57,11 +57,14 @@ def correlation_hurst(x, sigma, corr_length, hurst_par):
 
 
 if __name__ == '__main__':
-    u = generate_profile(200, 1000, 5.0, 10.0, 0.2)  # length, nbr_samples, sigma, corr_length, hurst_par
+    length = 200
+    nbr_samples = 1000
+    xvalues = np.linspace(0, length, nbr_samples)
+    u = generate_profile(length, nbr_samples, 5.0, 10.0, 0.2)  # length, nbr_samples, sigma, corr_length, hurst_par
     sum_squares = 0.0
     for i in range(u.size):
         sum_squares += u[i]**2
     print np.sqrt(sum_squares/u.size)
     plt.figure(figsize=(6, 6))
-    plt.plot(u)
+    plt.plot(xvalues, u)
     plt.show()
