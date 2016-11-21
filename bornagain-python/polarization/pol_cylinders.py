@@ -23,7 +23,7 @@ def create_sample():
     particle_layout = ba.ParticleLayout()
     cylinder_ff = ba.FormFactorCylinder(5*nm, 5*nm)
     cylinder = ba.Particle(particle_material, cylinder_ff)
-    particle_layout.addParticle(cylinder, 1.0)
+    particle_layout.addParticle(cylinder)
 
     air_layer = ba.Layer()
     air_layer.setMaterial(air_material)
