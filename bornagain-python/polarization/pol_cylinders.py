@@ -8,35 +8,10 @@ import bornagain as ba
 from bornagain import deg, angstrom, nm
 
 
-# ----------------------------------
-# describe sample and run simulation
-# ----------------------------------
-def RunSimulation():
-    # get sample
-    sample = CreateSample()
-    
-    # build and run experiment
-    simulation = ba.GISASSimulation()
-    simulation.setDetectorParameters(200, -3.0*deg, 3.0*deg, 200, 0.0*deg, 6.0*deg)
-    simulation.setBeamParameters(1.*angstrom, 0.5*deg, 0.0*deg)
-    simulation.setBeamIntensity(1e8)
-
-    # run simulation
-    simulation.setSample(sample)
-    unit_y = ba.kvector_t(0.0, 1.0, 0.0)
-    beampol = ba.kvector_t(0.0, 1.0, 0.0)
-
-    simulation.setBeamPolarization(beampol)
-    simulation.setAnalyzerProperties(unit_y, 1.0, 0.5)
-
-    simulation.runSimulation()
-
-    result = simulation.getIntensityData()
-
-    return result
-
-
-def CreateSample():
+# -------------------------------------
+# create sample with magnetic cylinders
+# -------------------------------------
+def create_sample():
     # create materials
     magnetic_field = ba.kvector_t(1.0, 1.0, 1.0)
     substr_field = ba.kvector_t(0.0, 1.0, 0.0)
@@ -64,11 +39,39 @@ def CreateSample():
     return multi_layer
 
 
-# -------------------------------------------------------------
-# main()
-# -------------------------------------------------------------
+# -----------------------------
+# initialize and run simulation
+# -----------------------------
+def run_simulation():
+    # get sample
+    sample = create_sample()
+    
+    # build and run experiment
+    simulation = ba.GISASSimulation()
+    simulation.setDetectorParameters(200, -3.0*deg, 3.0*deg, 200, 0.0*deg, 6.0*deg)
+    simulation.setBeamParameters(1.*angstrom, 0.5*deg, 0.0*deg)
+    simulation.setBeamIntensity(1e8)
+
+    # run simulation
+    simulation.setSample(sample)
+    unit_y = ba.kvector_t(0.0, 1.0, 0.0)
+    beampol = ba.kvector_t(0.0, 1.0, 0.0)
+
+    simulation.setBeamPolarization(beampol)
+    simulation.setAnalyzerProperties(unit_y, 1.0, 0.5)
+
+    simulation.runSimulation()
+
+    result = simulation.getIntensityData()
+
+    return result
+
+
+# -------------
+# main function
+# -------------
 if __name__ == '__main__':
-    result = RunSimulation()
+    result = run_simulation()
 
     # showing the result
     im = plt.imshow(
