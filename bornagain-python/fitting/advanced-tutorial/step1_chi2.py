@@ -79,8 +79,8 @@ def plot_chi2():
     simulation = get_simulation()
     ref_data = create_real_data().getArray()
 
-    a_radius = np.linspace(0.1, 14.0, num=50)
-    a_length = np.linspace(0.1, 12.0, num=50)
+    a_radius = np.linspace(0.1, 14.0, num=25)
+    a_length = np.linspace(0.1, 12.0, num=25)
     chi2_data = np.zeros([len(a_radius), len(a_length)])
 
     for i_rad, radius in enumerate(a_radius):

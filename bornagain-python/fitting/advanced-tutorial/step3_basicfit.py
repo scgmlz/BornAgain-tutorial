@@ -72,7 +72,7 @@ def run_fitting():
     fit_suite.addFitParameter("*Prism3/Height", 4.*nm).setUpperLimited(10.0)
     fit_suite.addFitParameter("*Prism3/BaseEdge", 5.*nm).setFixed()
 
-    # > Drawing fit progress evey 10'th iteration
+    # > Changing minimization algorithm
     # catalogue = ba.MinimizerCatalogue()
     # print(catalogue.toString())
     # fit_suite.setMinimizer("Minuit2", "Migrad")  # ba.Default
