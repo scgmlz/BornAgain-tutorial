@@ -36,11 +36,13 @@
 - 25' Python basic fitting tutorial, SampleBuilder (Gennady)
 - 20' Polarised neutrons (Walter)
 - 20' Fitting game Python (Marina)
-- 40' BornAgain on GitHub. Working with BornAgain on Linux.
+
 
 13:00 — 14:00 Lunch, posters
 
 #### 14:00 — 17:00 User talks and discussion
+
+- 5' BornAgain on GitHub.
 
 Foundations, hard matter:
 
