@@ -34,8 +34,8 @@
 - 10' Import of user data (Gennady)
 - 20' Coffee break
 - 25' Python basic fitting tutorial, SampleBuilder (Gennady)
-- 20' Fitting game Python (Marina)
 - 20' Polarised neutrons (Walter)
+- 20' Fitting game Python (Marina)
 - 40' BornAgain on GitHub. Working with BornAgain on Linux.
 
 13:00 — 14:00 Lunch, posters
