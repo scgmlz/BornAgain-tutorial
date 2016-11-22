@@ -2,14 +2,13 @@
 Demonstration of statistical properties of particle locations and comparison with interference functions
 """
 
-import math
 import matplotlib.pyplot as plt
 
 from Lattice1D_decay import Lattice1D_decay
 from Paracrystal import Paracrystal1D
 from Lattice1D import Lattice1D
 
-d, sig, declength = 1.0, 0.2, 8.0
+d, sig, declength = 1.0, 0.1, 8.0
 x_min, x_max = -10.0, 10.0
 accuracy = 5.0
 n_samples = 200

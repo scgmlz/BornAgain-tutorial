@@ -8,12 +8,43 @@ import bornagain as ba
 from bornagain import deg, angstrom, nm
 
 
-# ----------------------------------
-# describe sample and run simulation
-# ----------------------------------
-def RunSimulation():
+# -------------------------------------
+# create sample with magnetic cylinders
+# -------------------------------------
+def create_sample():
+    # create materials
+    magnetic_field = ba.kvector_t(1.0, 1.0, 1.0)
+    substr_field = ba.kvector_t(0.0, 1.0, 0.0)
+    particle_material = ba.HomogeneousMagneticMaterial("particle", 2e-5, 4e-7, magnetic_field)
+    air_material = ba.HomogeneousMaterial("Air", 0.0, 0.0)
+    substrate_material = ba.HomogeneousMagneticMaterial("Substrate", 7e-6, 1.8e-7, substr_field)
+
+    # Create multilayer
+    particle_layout = ba.ParticleLayout()
+    cylinder_ff = ba.FormFactorCylinder(5*nm, 5*nm)
+    cylinder = ba.Particle(particle_material, cylinder_ff)
+    particle_layout.addParticle(cylinder)
+
+    air_layer = ba.Layer()
+    air_layer.setMaterial(air_material)
+    air_layer.addLayout(particle_layout)
+
+    substrate_layer = ba.Layer()
+    substrate_layer.setMaterial(substrate_material)
+
+    multi_layer = ba.MultiLayer()
+    multi_layer.addLayer(air_layer)
+    multi_layer.addLayer(substrate_layer)
+
+    return multi_layer
+
+
+# -----------------------------
+# initialize and run simulation
+# -----------------------------
+def run_simulation():
     # get sample
-    sample = CreateSample()
+    sample = create_sample()
     
     # build and run experiment
     simulation = ba.GISASSimulation()
@@ -36,39 +67,11 @@ def RunSimulation():
     return result
 
 
-def CreateSample():
-    # create materials
-    magnetic_field = ba.kvector_t(1.0, 1.0, 1.0)
-    substr_field = ba.kvector_t(0.0, 1.0, 0.0)
-    particle_material = ba.HomogeneousMagneticMaterial("particle", 2e-5, 4e-7, magnetic_field)
-    air_material = ba.HomogeneousMaterial("Air", 0.0, 0.0)
-    substrate_material = ba.HomogeneousMagneticMaterial("Substrate", 7e-6, 1.8e-7, substr_field)
-
-    # Create multilayer
-    particle_layout = ba.ParticleLayout()
-    cylinder_ff = ba.FormFactorCylinder(5*nm, 5*nm)
-    cylinder = ba.Particle(particle_material, cylinder_ff)
-    particle_layout.addParticle(cylinder, 1.0)
-
-    air_layer = ba.Layer()
-    air_layer.setMaterial(air_material)
-    air_layer.addLayout(particle_layout)
-
-    substrate_layer = ba.Layer()
-    substrate_layer.setMaterial(substrate_material)
-
-    multi_layer = ba.MultiLayer()
-    multi_layer.addLayer(air_layer)
-    multi_layer.addLayer(substrate_layer)
-
-    return multi_layer
-
-
-# -------------------------------------------------------------
-# main()
-# -------------------------------------------------------------
+# -------------
+# main function
+# -------------
 if __name__ == '__main__':
-    result = RunSimulation()
+    result = run_simulation()
 
     # showing the result
     im = plt.imshow(
