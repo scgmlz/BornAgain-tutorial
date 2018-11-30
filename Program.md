@@ -3,7 +3,14 @@
 ## 19.12.2018
 #### (9:00?) 10:00 — 13:00 Python tutorial (Alexander)
 
+- 60' help to install BornAgain + Python ?
+- python basics:  syntax, data types, lists, dictionaries, loops, etc
 - 20' coffee break
+- numpy arrays: load from file, save to file, slice, sort, arithmetic operations (on arrays or selected columns/rows)
+- numpy advanced: take array of reflectivity data (2 columns, N rows), fill with random numbers, sort by first column (x), remove rows with duplicated x values
+- python broadcasting
+- matplotlib: plot 1D and 2D data, change colormap, line style, axis titles, fonts, save to file
+- matplotlib advanced: .matplotlibrc, arrange multiple plots
 
 #### 13:00 — 14:00 Lunch, registration, poster mounting
 
