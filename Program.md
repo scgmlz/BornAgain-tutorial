@@ -9,14 +9,14 @@
 - numpy arrays: load from file, save to file, slice, sort, arithmetic operations (on arrays or selected columns/rows)
 - numpy advanced: take array of reflectivity data (2 columns, N rows), fill with random numbers, sort by first column (x), remove rows with duplicated x values
 - python broadcasting
-- matplotlib: plot 1D and 2D data, change colormap, line style, axis titles, fonts, save to file
-- matplotlib advanced: .matplotlibrc, arrange multiple plots
+- matplotlib: plot 1D and 2D data, change colormap, line style, axis titles, legend, fonts, save to file
+- matplotlib advanced: .matplotlibrc, arrange multiple plots, add text, lines, shapes to plot
 
 #### 13:00 — 14:00 Lunch, registration, poster mounting
 
 #### 14:00 — 15:00 Official opening, BornAgain introduction (Joachim)
 
-#### 15:00 — 17:00 BornAgain tutorial
+#### 15:00 — 17:00 BornAgain tutorial (Basics/Quick start)
 <!---
 TODO: update
 - 20' BornAgain essentials overview (Walter)
@@ -28,10 +28,10 @@ TODO: update
 - 15' Roughness. Adding roughness.(Walter)
 -->
 
-#### 17:00 — 18:00 User session (posters, talks, discussion)
+#### 17:00 — 18:30 User session (posters, talks, discussion)
 
 ## 20.12.2018
-#### 09:00 — 10:40 BornAgain tutorial
+#### 09:00 — 10:40 BornAgain tutorial (Introduction to reflectivity?)
 <!--- 
 TODO: update
 - 15' Main concept of fitting (Gennady)
@@ -52,15 +52,20 @@ TODO: update
 
 12:00 — 13:00 Lunch, posters
 
-#### 13:00 — 17:00 BornAgain Tutorial
+#### 13:00 — 17:00 BornAgain Tutorial (GISAS, SAS, Offspec, Depth)
 
-#### 17:00 — 18:00 User session (posters, talks, discussion)
+#### 17:00 — 18:30 User session (posters, talks, discussion)
+
+19:30 - 24:00 Dinner in Garchinger Augustiner
 
 ## 21.12.2018
-#### 09:00 — 12:00 (13:00?) BornAgain tutorial
+#### 09:00 — 12:00 BornAgain tutorial (data fitting)
 
-- User session?
 - 20' Coffee break
-- Lunch?
+
+12:00 - 13:00 Lunch
+
+#### 13:00 — 15:00 User session "Fit your own data"
+
 - 15' Concluding remarks (Joachim)
 
