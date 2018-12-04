@@ -16,3 +16,8 @@
 - multilayer, roughness, correlated roughness
 - advanced: layers with density gradients
 - fit several datasets simultaneously
+
+### Other
+
+- resonator (depth profile)
+- supermirror (offspec)
