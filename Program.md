@@ -1,9 +1,14 @@
 # 2nd BornAgain School and User meeting Program
 
 ## 19.12.2018
-#### (9:00?) 10:00 — 13:00 Python tutorial (Alexander)
+#### 9:00 — 10:00 install BornAgain and Python (Alexander)
+- [Installation instructions](https://www.bornagainproject.org/documentation/getting-started/installation/)
+- Install numpy, matplotlib, jupyter, scipy, lmfit
+- Install pycharm (Python IDE)
+- Run BornAgain Python example
 
-- 60' help to install BornAgain + Python ?
+#### 10:00 — 13:00 Python tutorial (Alexander)
+
 - python basics:  syntax, data types, lists, dictionaries, loops, etc
 - 20' coffee break
 - numpy arrays: load from file, save to file, slice, sort, arithmetic operations (on arrays or selected columns/rows)
@@ -11,12 +16,13 @@
 - python broadcasting
 - matplotlib: plot 1D and 2D data, change colormap, line style, axis titles, legend, fonts, save to file
 - matplotlib advanced: .matplotlibrc, arrange multiple plots, add text, lines, shapes to plot
+- advanced: scipy (available optimizers and interface), lmfit
 
 #### 13:00 — 14:00 Lunch, registration, poster mounting
 
-#### 14:00 — 15:00 Official opening, BornAgain introduction (Joachim)
+#### 14:00 — 14:30 Official opening, BornAgain introduction (Joachim)
 
-#### 15:00 — 17:00 BornAgain tutorial (Basics/Quick start)
+#### 14:30 — 17:00 BornAgain tutorial (Basics/Quick start)
 <!---
 TODO: update
 - 20' BornAgain essentials overview (Walter)
