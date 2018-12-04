@@ -2,6 +2,9 @@
 
 ## 19.12.2018
 #### 9:00 — 10:00 install BornAgain and Python (Alexander)
+
+**(W) I would suggest using VS Code instead of PyCharm: it is much more lightweight and easier to setup**
+
 - [Installation instructions](https://www.bornagainproject.org/documentation/getting-started/installation/)
 - Install numpy, matplotlib, jupyter, scipy, lmfit
 - Install pycharm (Python IDE)
@@ -9,6 +12,8 @@
 - Run BornAgain Python example from pycharm
 
 #### 10:00 — 13:00 Python tutorial (Alexander)
+
+**(W) I think this covers indeed the basic stuff they need for using Python in their analysis (with or without BornAgain)**
 
 - python basics:  syntax, data types, lists, dictionaries, loops, etc
 - 20' coffee break
@@ -24,6 +29,13 @@
 #### 14:00 — 14:20 Official opening, BornAgain introduction (Joachim)
 
 #### 14:20 — 17:00 BornAgain tutorial (Basics/Quick start)
+
+**(W) I can give more or less the talk I did at Bayreuth. I will need some input from others to expand on the excercises.
+This talk is only about the GUI, so I will not cover any Python API.**
+
+**(W) Depending on what Joachim wants to cover, I might say a little bit about form factors and interference functions and how they compose to give the DWBA scattering. Roughness might also be interesting to cover here.**
+
+**(W) It might be interesting to already start a short interactive session with the attendees to hear from them what kind of sample geometries they are most interested in. Their input could then be used later (next days) to give further usage examples and help them simulate or fit their experiments.**
 
 - 20' BornAgain essentials overview (Walter?)
 - 30' GUI/Python quick start (Marina?)
@@ -48,6 +60,11 @@
 12:00 — 13:00 Lunch, posters
 
 #### 13:00 — 17:00 BornAgain Tutorial (GISAS, SAS, Offspec, Depth)
+**(W) Since we already covered basic GUI usage with examples (simulation only), we should reserve this session for Python API, polarized neutrons, fitting and more complex stuff, like Marina's talk about practical aspects of a real data analysis.**
+
+**(W) I could also cover more advanced aspects of data analysis, like the ones I talked about in Tutzing. It will be good to stress that with our help, the sky is the limit. :-)**
+
+**(W) Gennady might give his talk about using git in the data analysis workflow. If so, it might also be interesting for some people if I give a short introduction to TensorFlow. Even if this will not immediately enable them to use it, they will know about it and also know where they can get support.**
 
 TODO: update
 - 15' Main concept of fitting (Gennady)
@@ -64,10 +81,14 @@ TODO: update
 
 #### 17:00 — 18:30 User session "Fit your own data", discussion
 
+**(W) Here we could benefit form the input received during the previous day.**
+
 19:30 - 24:00 Dinner in Garchinger Augustiner
 
 ## 21.12.2018
 #### 09:00 — 12:00 BornAgain tutorial 
+
+**(W) This session looks part 2 of the complex stuff session started in the previous afternoon.**
 
 - polarized SANS/GISANS
 - complex samples
