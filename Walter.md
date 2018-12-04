@@ -60,7 +60,9 @@ This talk is only about the GUI, so I will not cover any Python API.**
 12:00 — 13:00 Lunch, posters
 
 #### 13:00 — 17:00 BornAgain Tutorial (GISAS, SAS, Offspec, Depth)
-**(W) Since we already covered basic GUI usage with examples (simulation only), we should reserve this session for Python API, polarized neutrons, fitting and more complex stuff, like Marina's talk about practical aspects of a real data analysis. If it is politically possible, I might also mention here SAS simulations.**
+**(W) Since we already covered basic GUI usage with examples (simulation only), we should reserve this session for Python API, polarized neutrons, fitting and more complex stuff, like Marina's talk about practical aspects of a real data analysis.**
+
+**(W) I could also cover more advanced aspects of data analysis, like the ones I talked about in Tutzing. It will be good to stress that with our help, the sky is the limit. :-)**
 
 **(W) Gennady might give his talk about using git in the data analysis workflow. If so, it might also be interesting for some people if I give a short introduction to TensorFlow. Even if this will not immediately enable them to use it, they will know about it and also know where they can get support.**
 
