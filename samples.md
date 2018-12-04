@@ -8,6 +8,7 @@
 - large particles, for example nanotubes, instrument resolution limits
 - mesocrystal
 - magnetic nanoparticles
+- particles crossing interfaces
 - advanced: manually construct magnetic domains
 
 ### Reflectivity
