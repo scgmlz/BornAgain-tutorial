@@ -21,25 +21,31 @@
 
 #### 13:00 — 14:00 Lunch, registration, poster mounting
 
-#### 14:00 — 14:20 Official opening, BornAgain introduction (Joachim)
+#### 14:00 — 14:20 Official opening (Joachim)
 
-#### 14:20 — 17:00 BornAgain tutorial (Basics/Quick start)
+#### 14:20 — 17:30 BornAgain tutorial (Basics/Quick start)
 
-- 20' BornAgain essentials overview (Walter?)
-- 30' GUI/Python quick start (Marina?)
-- 20' Coffee break
+- 20' BornAgain essentials overview (?)
+- 30' GUI Simulation basics (?)
 - 20' GISAS: introduction to theory (?)
-- 15' Particle positioning, rotation, embedded particles (Marina?)
-- 15' Particles with size distribution. Adding size distribution (Marina?)
-- 25' Interference functions and approximations. Adding interference functions (Walter?)
-- 15' Roughness. Adding roughness.(Walter?)
+- 20' Coffee break
+- 15' Particle positioning, rotation, embedded particles (?)
+- 15' Particles with size distribution. Adding size distribution (?)
+- 25' Interference functions and approximations. Adding interference functions (?)
+- 15' Graded interfaces (?)
+- 30' GUI fit basics (?)
 
-#### 17:00 — 18:00 User session (posters, talks, discussion)
+#### 17:30 — 18:30 User session (posters, talks, discussion)
 
 - 4 x 10' talks + 20' discussion 
 
 ## 20.12.2018
 #### 09:00 — 10:40 BornAgain tutorial (Introduction to reflectivity, Dmitry)
+
+- 20' Introduction to reflectivity (theory)
+- 30' GUI: simulate reflectivity
+- 15' Interface roughness.
+- 45' GUI: fit reflectivity data
 
 10:40 — 11:00 Coffee break
 
@@ -47,34 +53,38 @@
 
 12:00 — 13:00 Lunch, posters
 
-#### 13:00 — 17:00 BornAgain Tutorial (GISAS, SAS, Offspec, Depth)
+#### 13:00 — 17:00 BornAgain Tutorial
 
-TODO: update
-- 15' Main concept of fitting (Gennady)
-- 15' GUI basic fitting tutorial (Marina)
-- 20' Fitting game GUI (Marina)
-- 15' Introduction to sample parameters (Gennady)
-- 15' Types of detectors in BornAgain (Gennady)
-- 10' Import of user data (Gennady)
+- 30' Introduction to Python API
+- 90' Fitting from Python:
+  - 15' Main concept of fitting
+  - 15' Introduction to sample parameters
+  - 15' Masks, ROI
+  - 45' Excersises
 - 20' Coffee break
-- 25' Python basic fitting tutorial, SampleBuilder (Gennady)
-- 20' Polarised neutrons (Walter)
-- 20' Fitting game Python (Marina)
-
+- 15' Offspecular simulation
+- 15' Evanescent wave amplitude
+- 30' Polarized SANS/GISANS (Walter?)
+- 40' Fit reflectivity data from Python. Simultaneous fit of multiple datasets.
 
 #### 17:00 — 18:30 User session "Fit your own data", discussion
 
 19:30 - 24:00 Dinner in Garchinger Augustiner
 
 ## 21.12.2018
-#### 09:00 — 12:00 BornAgain tutorial 
+#### 09:00 — 12:30 BornAgain tutorial 
 
-- polarized SANS/GISANS
-- complex samples
+- 30' Practical aspects of data analysis (Marina)
+- 60' Complex samples: mesocrystal, large particles, gratings, density gradients
 - 20' Coffee break
-- 15' Concluding remarks (Joachim)
+- 15' GitHub
+- 15' Tensorflow
+- 15' Making GISAS movies
+- 45' Fitting user's data
 
-12:00 - 13:00 Lunch
+- 10' Concluding remarks (Joachim)
+
+12:30 - 13:30 Lunch
 
 
 
