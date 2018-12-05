@@ -84,7 +84,7 @@
 
 - 10' Concluding remarks (Joachim)
 
-12:30 - 13:30 Lunch
+#### 12:30 - 13:30 Lunch, departure
 
 
 
