@@ -21,7 +21,10 @@
 
 #### 13:00 — 14:00 Lunch, registration, poster mounting
 
-#### 14:00 — 14:20 Official opening (Joachim)
+#### 14:00 — 14:20 Official opening (Joachim?)
+
+- 10' Welcome
+- 10' Plan of the school
 
 #### 14:20 — 17:30 BornAgain tutorial (Basics/Quick start)
 
