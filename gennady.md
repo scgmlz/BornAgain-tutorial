@@ -135,7 +135,7 @@
 
 <hr>
 
-## Tuesday (20.12.2018)
+## Thursday (20.12.2018)
 
 ### 09:00 — 10:40 BornAgain tutorial
 
@@ -192,4 +192,3 @@
 + Concluding remarks
 
 ### 12:00 — 13:00 Lunch, departure
-
