@@ -107,12 +107,12 @@
 
 10:40 — 11:00 Coffee break
 
-#### 11:00 — 11:40 Advanced Geometry (?)
+#### 11:00 — 11:40 Advanced Geometry (Marina)
 
 - 20' Offspecular simulation
 - 20' Evanescent wave amplitude
 
-#### 11:40 — 12:10 Advanced BornAgain use (Walter)
+#### 11:40 — 12:10 Advanced simulation examples with BornAgain Python API (Walter)
 
 - Data generation, making GISAS movies
 
