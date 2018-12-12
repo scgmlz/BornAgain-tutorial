@@ -1,14 +1,14 @@
 # 2nd BornAgain School and User meeting Program
 
 ## 19.12.2018
-#### 9:00 — 10:00 install BornAgain and Python (Alexander)
+#### 9:00 — 10:00 Optional: install BornAgain 1.14.0 and Python (Alexander)
 - [Installation instructions](https://www.bornagainproject.org/documentation/getting-started/installation/)
 - Install numpy, matplotlib, jupyter, scipy, lmfit
 - Install pycharm (Python IDE)
 - Setup pycharm project with BornAgain examples
 - Run BornAgain Python example from pycharm
 
-#### 10:00 — 13:00 Python tutorial (Alexander)
+#### 10:00 — 13:00 Optional: Python tutorial (Alexander)
 
 - python basics:  syntax, data types, lists, dictionaries, loops, etc
 - 20' coffee break
@@ -19,9 +19,9 @@
 - matplotlib advanced: .matplotlibrc, arrange multiple plots, add text, lines, shapes to plot
 - advanced: scipy (available optimizers and interface), lmfit
 
-#### 13:00 — 14:00 Lunch, registration, poster mounting
+#### 13:00 — 14:00 Lunch, registration
 
-#### 14:00 — 14:20 Official opening (Joachim?)
+#### 14:00 — 14:20 Official opening (Joachim)
 
 - 10' Welcome
 - 10' Plan of the school
@@ -30,15 +30,14 @@
 
 - 20' BornAgain essentials overview (Walter?)
 - 30' GUI Simulation basics, Set up instrument, Jobview, Simulation (Gennady?)
-- 20' GISAS: introduction to theory (Joachim/Walter?)
+- 20' GISAS: introduction to theory (Walter?)
 
 - 20' Coffee break
 
 #### 15:50 — 16:30 BornAgain tutorial (GUI Basics/Particles, Marina)
 
-- 15' Particle positioning, rotation, embedded particles 
-- 15' Particles with size distribution. Adding size distribution 
-- 10' Graded interfaces 
+- 20' Particle positioning, rotation, embedded particles 
+- 20' Particles with size distribution. Adding size distribution 
 
 #### 16:30 — 17:00 BornAgain tutorial (GUI Basics/Interference, Walter)
 
@@ -47,7 +46,7 @@
 #### 17:00 — 17:30 BornAgain tutorial (GUI Basics/Interference, Gennady)
 - 30' GUI fit basics
 
-#### 17:30 — 18:30 User session (posters, talks, discussion)
+#### 17:30 — 18:30 User session
 
 - 15' W. Gruber "GISAXS Investigation of ordered nanoctructures"
 - 15' Y. Odarchenko "Simulation and Fitting of the Operando GISAXS data in BornAgain: A Case of Catalytically Active Supported Metal Nanoparticles"
@@ -56,36 +55,46 @@
 - 5' S. Schaper "In-situ GISAXS during sputter deposition of metal nanolayers on functional polymer thin films for lithium-ion batteries"
 
 ## 20.12.2018
-#### 09:00 — 10:40 BornAgain tutorial (Introduction to reflectivity, Dmitry)
-
-- 20' Introduction to reflectivity (theory)
-- 30' GUI: simulate reflectivity
-- 15' Interface roughness.
-- 45' GUI: fit reflectivity data
-
+#### 09:00 — 10:40 BornAgain tutorial (Python API/fitting, Gennady)
+- 40' Introduction to Python API
+- 60' Fitting from Python:
+  - Main concept of fitting
+  - Introduction to sample parameters
+  - Masks, ROI, slices
+  
 10:40 — 11:00 Coffee break
 
 #### 11:00 — 12:00 Prof. P-M. Buschbaum "GISAS for Soft Matter"
 
-12:00 — 13:00 Lunch, posters
+12:00 — 13:00 Lunch
 
-#### 13:00 — 17:00 BornAgain Tutorial
+#### 13:00 — 13:30 BornAgain tutorial (Interfaces, Walter)
 
-- 30' Introduction to Python API
-- 90' Fitting from Python:
-  - 15' Main concept of fitting
-  - 15' Introduction to sample parameters
-  - 15' Masks, ROI
-  - 45' Excersises
-- 20' Coffee break
-- 15' Offspecular simulation
-- 15' Evanescent wave amplitude
-- 30' Polarized SANS/GISANS (Walter?)
+- 15' Graded interfaces 
+- 15' Interface roughness.
+
+#### 13:30 — 15:00 BornAgain tutorial (Introduction to reflectivity, Dmitry)
+
+- 15' Introduction to reflectivity (theory)
+- 15' Materials (SLD-based, RI-based)
+- 20' GUI: simulate/fit reflectivity
 - 40' Fit reflectivity data from Python. Simultaneous fit of multiple datasets.
 
-#### 17:00 — 18:30 User session "Fit your own data", discussion
+- 20' Coffee break
 
-19:30 - 24:00 Dinner in Garchinger Augustiner
+#### 15:20 — 16:00 BornAgain Tutorial (Polarized neutrons, Walter) 
+
+- 40' Polarized SANS/GISANS, magnetic materials
+
+#### 16:00 — 17:00 User session 
+- 15' W. Ji "Understand scattering data with BornAgain"
+- 15' N. Nandakumaran "Use of BornAgain for analysis of Polarized SANS data: the wish list"
+- 15' T. Kyrey "BornAgain for thin polymer systems" 
+- 15' E. Vezhlev "TREFF: polarised reflectometer and test beamline"
+
+#### 17:00 — 18:30 Optional: "Fit your own data", discussion
+
+19:30 Dinner in Garchinger Augustiner
 
 ## 21.12.2018
 #### 09:00 — 12:30 BornAgain tutorial 
@@ -97,6 +106,9 @@
 - 15' Tensorflow
 - 15' Making GISAS movies
 - 45' Fitting user's data
+
+- 15' Offspecular simulation
+- 15' Evanescent wave amplitude
 
 - 10' Concluding remarks (Joachim)
 
