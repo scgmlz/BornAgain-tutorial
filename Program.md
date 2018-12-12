@@ -47,7 +47,7 @@
 
 - 30' GUI fit basics
 
-#### 17:30 — 18:30 User session
+#### 17:30 — 18:30 User session (Joachim)
 
 - 15' W. Gruber "GISAXS Investigation of ordered nanoctructures"
 - 15' Y. Odarchenko "Simulation and Fitting of the Operando GISAXS data in BornAgain: A Case of Catalytically Active Supported Metal Nanoparticles"
@@ -87,7 +87,7 @@
 
 - 40' Polarized SANS/GISANS, magnetic materials
 
-#### 16:00 — 17:00 User session 
+#### 16:00 — 17:00 User session (Joachim)
 - 15' W. Ji "Understand scattering data with BornAgain"
 - 15' N. Nandakumaran "Use of BornAgain for analysis of Polarized SANS data: the wish list"
 - 15' T. Kyrey "BornAgain for thin polymer systems" 
