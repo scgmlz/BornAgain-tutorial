@@ -21,31 +21,33 @@
 
 #### 13:00 — 14:00 Lunch, registration
 
-#### 14:00 — 14:20 Official opening (Joachim)
+#### 14:00 — 14:20 Official opening (Joachim, Gennady)
 
-- 10' Welcome
-- 10' Plan of the school
+- 5' Welcome (Joachim)
+- 15' Plan of the school, what's new in BornAgain (Gennady)
 
-#### 14:20 — 15:30 BornAgain tutorial (GUI Basics/Quick start)
+#### 14:20 — 15:00 GUI Overview (Marina)
 
-- 20' BornAgain essentials overview (Walter?)
-- 30' GUI Simulation basics, Setup instrument, Jobview, Simulation (Marina?)
-- 20' GISAS: introduction to theory (Walter?)
+- GUI Simulation basics, Setup instrument, Jobview, Simulation, 3D-view
 
-15:30 — 15:50 Coffee break
+15:00 — 15:20 Coffee break
 
-#### 15:50 — 16:30 BornAgain tutorial (GUI Basics/Particles, Marina)
+#### 15:20 — 15:50 GISAS Theory (Walter)
 
-- 20' Particle positioning, rotation, embedded particles 
-- 20' Particles with size distribution. Adding size distribution 
+#### 15:50 — 16:20 GUI Basics: Particles (Marina)
 
-#### 16:30 — 17:00 BornAgain tutorial (GUI Basics/Interference, Marina)
+- Particle positioning, rotation, embedded particles, particle composition
+- Particles with size distribution. Adding size distribution 
 
-- 30' Interference functions and approximations. Adding interference functions
+#### 16:20 — 17:00 GUI Basics: Interference, Interfaces (Walter)
 
-#### 17:00 — 17:30 BornAgain tutorial (GUI Basics/Fit, Gennady)
+- Interference functions and approximations. Adding interference functions
+- Graded interfaces
+- Interface roughness
 
-- 30' GUI fit basics
+#### 17:00 — 17:30 GUI Basics: Fit (Gennady)
+
+- GUI fit basics
 
 #### 17:30 — 18:30 User session (Joachim)
 
@@ -65,25 +67,22 @@
   
 10:40 — 11:00 Coffee break
 
-#### 11:00 — 12:00 Prof. P-M. Buschbaum "GISAS for Soft Matter"
+#### 11:00 — 12:00 Prof. P. Müller-Buschbaum "GISAS for Soft Matter", Group photo
 
-12:00 — 13:00 Lunch
+#### 12:00 — 13:00 Introduction to reflectivity I (Dmitry)
+- Materials (SLD-based, RI-based)
+- Introduction to reflectivity (theory)
 
-#### 13:00 — 13:30 BornAgain tutorial (Interfaces, Walter)
+13:00 — 14:00 Lunch
 
-- 15' Graded interfaces 
-- 15' Interface roughness.
+#### 14:00 — 15:00 Introduction to reflectivity II (Dmitry)
 
-#### 13:30 — 15:00 BornAgain tutorial (Introduction to reflectivity, Dmitry)
-
-- 15' Introduction to reflectivity (theory)
-- 15' Materials (SLD-based, RI-based)
-- 20' GUI: simulate/fit reflectivity
-- 40' Fit reflectivity data from Python. Simultaneous fit of multiple datasets.
+- GUI: simulate/fit reflectivity
+- Fit reflectivity data from Python. Simultaneous fit of multiple datasets.
 
 15:00 — 15:20 Coffee break
 
-#### 15:20 — 16:00 BornAgain Tutorial (Polarized neutrons, Walter) 
+#### 15:20 — 16:00 Polarized neutrons (Walter) 
 
 - 40' Polarized SANS/GISANS, magnetic materials
 
@@ -99,22 +98,23 @@
 
 ## 21.12.2018
 
-#### 09:00 — 10:40 Advanced BornAgain tutorial I: Complex samples
+#### 09:00 — 09:30 Github (Gennady)
 
-- 60' Complex samples: mesocrystal, large particles, superlattice (Walter)
+#### 09:30 — 10:40  Complex samples
+
+- 30' Complex samples: mesocrystal, large particles, superlattice (Walter)
 - 40' Microgels, density gradients, diffuse scattering (Marina)
 
 10:40 — 11:00 Coffee break
 
-#### 11:00 — 11:40 Advanced BornAgain tutorial II: Advanced Geometry (Dmitry?)
+#### 11:00 — 11:40 Advanced Geometry (?)
 
 - 20' Offspecular simulation
 - 20' Evanescent wave amplitude
 
-#### 11:40 — 12:10 Advanced BornAgain tutorial III: Tools (Gennady?)
+#### 11:40 — 12:10 Advanced BornAgain use (Walter)
 
-- 20' Making GISAS movies
-- 10' GitHub
+- Data generation, making GISAS movies
 
 #### 12:10 — 12:30 Concluding remarks (Joachim)
 
