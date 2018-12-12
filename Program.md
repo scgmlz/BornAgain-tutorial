@@ -106,14 +106,15 @@
 
 10:40 — 11:00 Coffee break
 
-#### 11:00 — 11:30 Advanced BornAgain tutorial II: Advanced Geometry (Dmitry?)
+#### 11:00 — 11:40 Advanced BornAgain tutorial II: Advanced Geometry (Dmitry?)
 
-- 15' Offspecular simulation
-- 15' Evanescent wave amplitude
+- 20' Offspecular simulation
+- 20' Evanescent wave amplitude
 
-#### 11:30 — 12:10 Advanced BornAgain tutorial III: Tools (Gennady?)
-- 20' GitHub
+#### 11:40 — 12:10 Advanced BornAgain tutorial III: Tools (Gennady?)
+
 - 20' Making GISAS movies
+- 10' GitHub
 
 #### 12:10 — 12:30 Concluding remarks (Joachim)
 
