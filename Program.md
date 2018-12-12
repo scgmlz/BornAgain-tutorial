@@ -26,21 +26,34 @@
 - 10' Welcome
 - 10' Plan of the school
 
-#### 14:20 — 17:30 BornAgain tutorial (Basics/Quick start)
+#### 14:20 — 15:30 BornAgain tutorial (GUI Basics/Quick start)
 
-- 20' BornAgain essentials overview (?)
-- 30' GUI Simulation basics (?)
-- 20' GISAS: introduction to theory (?)
+- 20' BornAgain essentials overview (Walter?)
+- 30' GUI Simulation basics, Set up instrument, Jobview, Simulation (Gennady?)
+- 20' GISAS: introduction to theory (Joachim/Walter?)
+
 - 20' Coffee break
-- 15' Particle positioning, rotation, embedded particles (?)
-- 15' Particles with size distribution. Adding size distribution (?)
-- 25' Interference functions and approximations. Adding interference functions (?)
-- 15' Graded interfaces (?)
-- 30' GUI fit basics (?)
+
+#### 15:50 — 16:30 BornAgain tutorial (GUI Basics/Particles, Marina)
+
+- 15' Particle positioning, rotation, embedded particles 
+- 15' Particles with size distribution. Adding size distribution 
+- 10' Graded interfaces 
+
+#### 16:30 — 17:00 BornAgain tutorial (GUI Basics/Interference, Walter)
+
+- 30' Interference functions and approximations. Adding interference functions
+
+#### 17:00 — 17:30 BornAgain tutorial (GUI Basics/Interference, Gennady)
+- 30' GUI fit basics
 
 #### 17:30 — 18:30 User session (posters, talks, discussion)
 
-- 4 x 10' talks + 20' discussion 
+- 15' W. Gruber "GISAXS Investigation of ordered nanoctructures"
+- 15' Y. Odarchenko "Simulation and Fitting of the Operando GISAXS data in BornAgain: A Case of Catalytically Active Supported Metal Nanoparticles"
+- 15' S. Maiti "Determining the complex Structure of Nanocrystal Superlattices"
+- 5' Ch. Geiger "Co-nonsolvency in thermo-responsive block copolymer thin films"
+- 5' S. Schaper "In-situ GISAXS during sputter deposition of metal nanolayers on functional polymer thin films for lithium-ion batteries"
 
 ## 20.12.2018
 #### 09:00 — 10:40 BornAgain tutorial (Introduction to reflectivity, Dmitry)
