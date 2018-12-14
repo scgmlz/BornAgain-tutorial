@@ -2,3 +2,5 @@
 .DS_Store
 ml_data/
 animation.mp4
+__init__.py
+__pycache__/
