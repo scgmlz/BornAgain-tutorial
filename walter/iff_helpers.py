@@ -30,7 +30,7 @@ def get_lines(x,y):
 
 def plot_infinite_lattice(period, endpoint, decay_fun):
     fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(10,5))
-    fig.suptitle('Infinite exact lattice', fontsize=16)
+    fig.suptitle("Infinite exact lattice", fontsize=16)
     x = gen_lattice_points(period, endpoint)
     y = [decay_fun(pos) for pos in x]
     ax1.scatter(x, y)
