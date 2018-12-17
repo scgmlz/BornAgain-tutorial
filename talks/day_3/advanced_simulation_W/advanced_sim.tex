@@ -1,0 +1,67 @@
+\documentclass{beamer}
+\usetheme{Frankfurt}
+%\usecolortheme{seahorse}
+
+\title{Advanced simulations}
+\author
+{Walter Van Herck\inst{1}}
+\institute[JCNS at MLZ] % (optional)
+{
+  \inst{1}%
+  J\"ulich Centre for Neutron Science at MLZ
+}
+\date[BornAgain] % (optional)
+{BornAgain School and User Meeting, 2018}
+\subject{Computer Science}
+
+\begin{document}
+
+\frame[plain]{\titlepage}
+
+\begin{frame}
+    \frametitle{Overview}
+    \tableofcontents
+\end{frame}
+
+\section{Time resolved GISAS}
+
+\begin{frame}
+    \frametitle{Mesocrystals}
+        \begin{itemize}
+            \item Mesocrystals consist of nanoparticles, ordered in a three\
+                  dimensional lattice.
+            \item A mesocrystal also has an outer shape.
+        \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Mesocrystal form factor}
+        \begin{itemize}
+            \item The shape function of the mesocrystal is the product of its\
+                  outer shape function with a 3d arrangement of nanoparticles:
+                  \[ S_{meso}(\mathbf r) = S_{outer}(\mathbf r)\cdot \
+                  \sum_{\mathbf{R_i}\in\Lambda} S_{nano}\left(\mathbf r - \mathbf{R_i}\right)\]
+            \item The form factor then becomes a convolution:
+                  \[ F_{meso}(\mathbf q) = F_{outer}(\mathbf q)\otimes \
+                  \sum_{\mathbf{Q_i}\in\Lambda^*} F_{nano}(\mathbf{Q_i}) \delta\left(\mathbf q- \mathbf{Q_i}\right)\]
+        \end{itemize}
+\end{frame}
+
+\section{Deep learning with BornAgain}
+
+
+\begin{frame}
+    \frametitle{Large particles}
+    \begin{itemize}
+        \item For very large particles, the fluctuations of the scattering\
+              cross section in each detector pixel cause aliasing when a\
+              single sample is used.
+        \item BornAgain includes the possibility of using Monte Carlo\
+              integration over the pixel.
+    \end{itemize}
+    % \begin{figure}
+    %     \includegraphics[width=8cm]{aliasing.png}
+    % \end{figure}
+\end{frame}
+
+\end{document}
