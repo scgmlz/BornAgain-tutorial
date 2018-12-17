@@ -100,3 +100,49 @@ def plot_expdecay_lattice(period, domain, endpoint):
     ax2.set_ylim(0., 1.2*qyfactor)
     ax2.set_xlabel("qx")
     ax2.set_title("Reciprocal space")
+
+
+def gauss(x, mean, var):
+    exponent = - (x - mean)**2 / (2.*var)
+    prefactor = 1. / np.sqrt(2.*np.pi*var)
+    return prefactor*np.exp(exponent)
+
+
+def s_total(x, period, var, N=4):
+    result = 0.0
+    for i in range(-N, N+1):
+        if i==0:
+            continue
+        mean = i*period
+        variance = np.abs(i*var)
+        result = result + gauss(x, mean, variance)
+    return result
+
+
+def iff_paracrystal(q, period, var, damp=1e6):
+    p_fourier = np.exp(1j*q*period)*np.exp(-q**2 *var/2.)*np.exp(-period/damp)
+    return 1. + 2.*(p_fourier/(1-p_fourier)).real
+
+
+def plot_paracrystal_lattice(period, var, endpoint):
+    fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(10,5))
+    fig.suptitle("Paracrystal lattice", fontsize=16)
+    x = np.linspace(-endpoint, endpoint, num=1001)
+    n_periods = int(10*endpoint/period)
+    y = [s_total(val, period, var, n_periods) for val in x]
+    ax1.plot(x, y)
+    deltax = [0.]
+    deltay = [1.]
+    ax1.scatter(deltax, deltay)
+    ax1.add_collection(get_lines(deltax, deltay))
+    # ax1.add_collection(get_lines(x, y))
+    ax1.set_ylim(0., 1.2)
+    ax1.set_xlabel("x")
+    ax1.set_ylabel("S_total")
+    ax1.set_title("Real space")
+    qx = np.linspace(-endpoint/2, endpoint/2, num=1001)
+    qy = [iff_paracrystal(val, period, var, 1e6) for val in qx]
+    ax2.plot(qx, qy)
+    ax2.set_ylim(0., 4.)
+    ax2.set_xlabel("qx")
+    ax2.set_title("Reciprocal space")
