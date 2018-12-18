@@ -15,7 +15,7 @@ Folder: `day_1/gui_basics_2_W/`
 * Presentation: `gui_basics.pdf`
 * Notebook: `interference_functions.ipynb`
 * Notebook: `roughness.ipynb`
-* GUI Demo
+* GUI Demo: `gui_demo.md`
 * Exercise: `ex_iff_graded.ipynb`
 
 ## Day 2
@@ -25,7 +25,7 @@ Folder: `day_1/gui_basics_2_W/`
 Folder: `day_2/polarized_neutrons_W/`
 
 * Presentation: `polarized_neutrons.pdf`
-* GUI Demo
+* GUI Demo: `polarized_demo.md`
 * Exercise: `ex_polarized.ipynb`
 
 ## Day 3
@@ -35,7 +35,7 @@ Folder: `day_2/polarized_neutrons_W/`
 Folder: `day_3/complex_samples_1_W/`
 
 * Presentation: `complex_samples.pdf`
-* GUI demo for mesocrystals and large particles
+* GUI demo (mesocrystals and large particles): `complex_demo.md`
 * Notebook: `superlattice.ipynb`
 
 ### Advanced simulation examples (30')
