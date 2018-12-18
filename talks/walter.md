@@ -35,7 +35,7 @@ Folder: `day_2/polarized_neutrons_W/`
 Folder: `day_3/complex_samples_1_W/`
 
 * Presentation: `complex_samples.pdf`
-* GUI demo for mesocrystals and large particles
+* GUI demo (mesocrystals and large particles): `complex_demo.md`
 * Notebook: `superlattice.ipynb`
 
 ### Advanced simulation examples (30')
