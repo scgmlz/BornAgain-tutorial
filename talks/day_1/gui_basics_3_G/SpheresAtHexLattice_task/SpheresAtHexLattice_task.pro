@@ -563,7 +563,7 @@
                         <Parameter ParType="ComboProperty" ParRole="0" ParValue="0" ParExt="Decoupling Approximation;Size Space Coupling Approximation"/>
                     </Item>
                     <Item ModelType="Property" Tag="TotalParticleDensity" DisplayName="TotalParticleDensity">
-                        <Parameter ParType="double" ParRole="0" ParValue="1.472832319361e-3"/>
+                        <Parameter ParType="double" ParRole="0" ParValue="2.886751345948e-3"/>
                     </Item>
                     <Item ModelType="Property" Tag="Weight" DisplayName="Weight">
                         <Parameter ParType="double" ParRole="0" ParValue="1.000000000000e+0"/>
@@ -585,20 +585,20 @@
                                     <Parameter ParType="double" ParRole="0" ParValue="1.600000000000e+1"/>
                                 </Item>
                             </Item>
+                            <Item ModelType="FullSphere" Tag="Item tag" DisplayName="FullSphere">
+                                <Item ModelType="Property" Tag="Radius" DisplayName="Radius">
+                                    <Parameter ParType="double" ParRole="0" ParValue="2.000000000000e+1"/>
+                                </Item>
+                            </Item>
                             <Item ModelType="TruncatedSphere" Tag="Item tag" DisplayName="TruncatedSphere">
                                 <Item ModelType="Property" Tag="Radius" DisplayName="Radius">
-                                    <Parameter ParType="double" ParRole="0" ParValue="1.000000000000e+1"/>
+                                    <Parameter ParType="double" ParRole="0" ParValue="8.000000000000e+0"/>
                                 </Item>
                                 <Item ModelType="Property" Tag="Height" DisplayName="Height">
                                     <Parameter ParType="double" ParRole="0" ParValue="8.500000000000e+0"/>
                                 </Item>
                                 <Item ModelType="Property" Tag="DeltaHeight" DisplayName="DeltaHeight">
                                     <Parameter ParType="double" ParRole="0" ParValue="0.000000000000e+0"/>
-                                </Item>
-                            </Item>
-                            <Item ModelType="FullSphere" Tag="Item tag" DisplayName="FullSphere">
-                                <Item ModelType="Property" Tag="Radius" DisplayName="Radius">
-                                    <Parameter ParType="double" ParRole="0" ParValue="8.000000000000e+0"/>
                                 </Item>
                             </Item>
                         </Item>
@@ -632,7 +632,7 @@
                             <Parameter ParType="ComboProperty" ParRole="0" ParValue="1" ParExt="Basic;Hexagonal;Square"/>
                             <Item ModelType="HexagonalLattice" Tag="Item tag" DisplayName="HexagonalLattice">
                                 <Item ModelType="Property" Tag="LatticeLength" DisplayName="LatticeLength">
-                                    <Parameter ParType="double" ParRole="0" ParValue="2.800000000000e+1"/>
+                                    <Parameter ParType="double" ParRole="0" ParValue="2.000000000000e+1"/>
                                 </Item>
                                 <Item ModelType="Property" Tag="Xi" DisplayName="Xi">
                                     <Parameter ParType="double" ParRole="0" ParValue="0.000000000000e+0"/>
