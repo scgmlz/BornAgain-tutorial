@@ -57,6 +57,7 @@ def get_simulation():
 
     simulation.setBeamParameters(0.134 * nm, 0.2 * deg, 0.0 * deg)
     simulation.setBeamIntensity(1.0e+08)
+    simulation.setTerminalProgressMonitor()
     return simulation
 
 
