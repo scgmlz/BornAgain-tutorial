@@ -119,8 +119,10 @@ def s_total(x, period, var, N=4):
     return result
 
 
-def iff_paracrystal(q, period, var, damp=1e6):
-    p_fourier = np.exp(1j*q*period)*np.exp(-q**2 *var/2.)*np.exp(-period/damp)
+def iff_paracrystal(q, period, var):
+    p_fourier = np.exp(1j*q*period)*np.exp(-q**2 *var/2.)
+    if np.abs(q*period) < 1e-4:
+        return var/period**2 + (q*period)**2 * (1 - 3*var**2/period**4)/12
     return 1. + 2.*(p_fourier/(1-p_fourier)).real
 
 
@@ -141,7 +143,7 @@ def plot_paracrystal_lattice(period, var, endpoint):
     ax1.set_ylabel("S_total")
     ax1.set_title("Real space")
     qx = np.linspace(-endpoint/2, endpoint/2, num=1001)
-    qy = [iff_paracrystal(val, period, var, 1e6) for val in qx]
+    qy = [iff_paracrystal(val, period, var) for val in qx]
     ax2.plot(qx, qy)
     ax2.set_ylim(0., 4.)
     ax2.set_xlabel("qx")
