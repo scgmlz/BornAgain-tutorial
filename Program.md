@@ -37,7 +37,7 @@
 #### 15:50 — 16:20 GUI Basics: Particles (Marina)
 
 - Particle positioning, rotation, embedded particles, particle composition
-- Particles with size distribution. Adding size distribution 
+- Particles with size distribution. Adding size distribution
 
 #### 16:20 — 17:00 GUI Basics: Interference, Interfaces (Walter)
 
@@ -64,7 +64,7 @@
   - Main concept of fitting
   - Introduction to sample parameters
   - Masks, ROI, slices
-  
+
 10:40 — 11:00 Coffee break
 
 #### 11:00 — 12:00 Prof. P. Müller-Buschbaum "GISAS for Soft Matter", Group photo
@@ -82,14 +82,14 @@
 
 15:00 — 15:20 Coffee break
 
-#### 15:20 — 16:00 Polarized neutrons (Walter) 
+#### 15:20 — 16:00 Polarized neutrons (Walter)
 
 - 40' Polarized SANS/GISANS, magnetic materials
 
 #### 16:00 — 17:00 User session (Joachim)
 - 15' W. Ji "Understand scattering data with BornAgain"
 - 15' N. Nandakumaran "Use of BornAgain for analysis of Polarized SANS data: the wish list"
-- 15' T. Kyrey "BornAgain for thin polymer systems" 
+- 15' T. Kyrey "BornAgain for thin polymer systems"
 - 15' E. Vezhlev "TREFF: polarised reflectometer and test beamline"
 
 #### 17:00 — 18:30 Optional: "Fit your own data", discussion
