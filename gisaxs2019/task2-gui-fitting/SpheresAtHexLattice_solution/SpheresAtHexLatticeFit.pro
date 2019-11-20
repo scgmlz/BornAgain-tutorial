@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<BornAgain Version="1.14.0">
+<BornAgain Version="1.16.99">
     <DocumentInfo ProjectName="SpheresAtHexLatticeFit"/>
     <DocumentModel Name="DefaultName">
         <Item ModelType="SimulationOptions" Tag="rootTag" DisplayName="SimulationOptions">
@@ -355,10 +355,10 @@
                         <Item ModelType="Property" Tag="Nbins" DisplayName="Nbins">
                             <Parameter ParType="int" ParRole="0" ParValue="100"/>
                         </Item>
-                        <Item ModelType="Property" Tag="Min" DisplayName="Min">
+                        <Item ModelType="Property" Tag="Min [deg]" DisplayName="Min [deg]">
                             <Parameter ParType="double" ParRole="0" ParValue="-1.000000000000e+00"/>
                         </Item>
-                        <Item ModelType="Property" Tag="Max" DisplayName="Max">
+                        <Item ModelType="Property" Tag="Max [deg]" DisplayName="Max [deg]">
                             <Parameter ParType="double" ParRole="0" ParValue="1.000000000000e+00"/>
                         </Item>
                         <Item ModelType="Property" Tag="title" DisplayName="title">
@@ -375,10 +375,10 @@
                         <Item ModelType="Property" Tag="Nbins" DisplayName="Nbins">
                             <Parameter ParType="int" ParRole="0" ParValue="100"/>
                         </Item>
-                        <Item ModelType="Property" Tag="Min" DisplayName="Min">
+                        <Item ModelType="Property" Tag="Min [deg]" DisplayName="Min [deg]">
                             <Parameter ParType="double" ParRole="0" ParValue="0.000000000000e+00"/>
                         </Item>
-                        <Item ModelType="Property" Tag="Max" DisplayName="Max">
+                        <Item ModelType="Property" Tag="Max [deg]" DisplayName="Max [deg]">
                             <Parameter ParType="double" ParRole="0" ParValue="2.000000000000e+00"/>
                         </Item>
                         <Item ModelType="Property" Tag="title" DisplayName="title">
@@ -419,10 +419,10 @@
                         <Item ModelType="Property" Tag="Nbins" DisplayName="Nbins">
                             <Parameter ParType="int" ParRole="0" ParValue="981"/>
                         </Item>
-                        <Item ModelType="Property" Tag="Min" DisplayName="Min">
+                        <Item ModelType="Property" Tag="Min [deg]" DisplayName="Min [deg]">
                             <Parameter ParType="double" ParRole="0" ParValue="0.000000000000e+00"/>
                         </Item>
-                        <Item ModelType="Property" Tag="Max" DisplayName="Width">
+                        <Item ModelType="Property" Tag="Max [deg]" DisplayName="Width [mm]">
                             <Parameter ParType="double" ParRole="0" ParValue="1.687320000000e+02"/>
                         </Item>
                         <Item ModelType="Property" Tag="title" DisplayName="title">
@@ -439,10 +439,10 @@
                         <Item ModelType="Property" Tag="Nbins" DisplayName="Nbins">
                             <Parameter ParType="int" ParRole="0" ParValue="1043"/>
                         </Item>
-                        <Item ModelType="Property" Tag="Min" DisplayName="Min">
+                        <Item ModelType="Property" Tag="Min [deg]" DisplayName="Min [deg]">
                             <Parameter ParType="double" ParRole="0" ParValue="0.000000000000e+00"/>
                         </Item>
-                        <Item ModelType="Property" Tag="Max" DisplayName="Height">
+                        <Item ModelType="Property" Tag="Max [deg]" DisplayName="Height [mm]">
                             <Parameter ParType="double" ParRole="0" ParValue="1.793960000000e+02"/>
                         </Item>
                         <Item ModelType="Property" Tag="title" DisplayName="title">
@@ -559,9 +559,6 @@
                     <Item ModelType="Property" Tag="ypos" DisplayName="ypos">
                         <Parameter ParType="double" ParRole="0" ParValue="6.535000000000e+02"/>
                     </Item>
-                    <Item ModelType="Property" Tag="Approximation" DisplayName="Approximation">
-                        <Parameter ParType="ComboProperty" ParRole="0" ParValue="0" ParExt="Decoupling Approximation;Size Space Coupling Approximation"/>
-                    </Item>
                     <Item ModelType="Property" Tag="TotalParticleDensity" DisplayName="TotalParticleDensity">
                         <Parameter ParType="double" ParRole="0" ParValue="9.988758982519e-04"/>
                     </Item>
@@ -622,6 +619,9 @@
                         </Item>
                         <Item ModelType="Property" Tag="ypos" DisplayName="ypos">
                             <Parameter ParType="double" ParRole="0" ParValue="8.970000000000e+02"/>
+                        </Item>
+                        <Item ModelType="Property" Tag="PositionVariance" DisplayName="PositionVariance">
+                            <Parameter ParType="double" ParRole="0" ParValue="0.000000000000e+00"/>
                         </Item>
                         <Item ModelType="GroupProperty" Tag="LatticeType" DisplayName="LatticeType">
                             <Parameter ParType="ComboProperty" ParRole="0" ParValue="1" ParExt="Basic;Hexagonal;Square"/>
@@ -711,7 +711,7 @@
                     <Parameter ParType="QString" ParRole="0" ParValue="realdata_experimental_data_0.int.gz"/>
                 </Item>
                 <Item ModelType="Property" Tag="Axes Units" DisplayName="Axes Units">
-                    <Parameter ParType="ComboProperty" ParRole="0" ParValue="0" ParExt="nbins;Radians;Degrees;q-space;mm"/>
+                    <Parameter ParType="ComboProperty" ParRole="0" ParValue="4" ParExt="nbins;Radians;Degrees;q-space;mm"/>
                 </Item>
                 <Item ModelType="Property" Tag="Title" DisplayName="Title">
                     <Parameter ParType="QString" ParRole="0" ParValue=""/>
@@ -732,14 +732,14 @@
                     <Item ModelType="Property" Tag="Nbins" DisplayName="Nbins">
                         <Parameter ParType="int" ParRole="0" ParValue="981"/>
                     </Item>
-                    <Item ModelType="Property" Tag="Min" DisplayName="Min">
+                    <Item ModelType="Property" Tag="Min [deg]" DisplayName="Min [deg]">
                         <Parameter ParType="double" ParRole="0" ParValue="0.000000000000e+00"/>
                     </Item>
-                    <Item ModelType="Property" Tag="Max" DisplayName="Max">
-                        <Parameter ParType="double" ParRole="0" ParValue="9.810000000000e+02"/>
+                    <Item ModelType="Property" Tag="Max [deg]" DisplayName="Max [deg]">
+                        <Parameter ParType="double" ParRole="0" ParValue="1.687320000000e+02"/>
                     </Item>
                     <Item ModelType="Property" Tag="title" DisplayName="title">
-                        <Parameter ParType="QString" ParRole="0" ParValue="X [nbins]"/>
+                        <Parameter ParType="QString" ParRole="0" ParValue="X [mm]"/>
                     </Item>
                     <Item ModelType="Property" Tag="Title Visibility" DisplayName="Title Visibility">
                         <Parameter ParType="bool" ParRole="0" ParValue="1"/>
@@ -752,14 +752,14 @@
                     <Item ModelType="Property" Tag="Nbins" DisplayName="Nbins">
                         <Parameter ParType="int" ParRole="0" ParValue="1043"/>
                     </Item>
-                    <Item ModelType="Property" Tag="Min" DisplayName="Min">
+                    <Item ModelType="Property" Tag="Min [deg]" DisplayName="Min [deg]">
                         <Parameter ParType="double" ParRole="0" ParValue="0.000000000000e+00"/>
                     </Item>
-                    <Item ModelType="Property" Tag="Max" DisplayName="Max">
-                        <Parameter ParType="double" ParRole="0" ParValue="1.043000000000e+03"/>
+                    <Item ModelType="Property" Tag="Max [deg]" DisplayName="Max [deg]">
+                        <Parameter ParType="double" ParRole="0" ParValue="1.793960000000e+02"/>
                     </Item>
                     <Item ModelType="Property" Tag="title" DisplayName="title">
-                        <Parameter ParType="QString" ParRole="0" ParValue="Y [nbins]"/>
+                        <Parameter ParType="QString" ParRole="0" ParValue="Y [mm]"/>
                     </Item>
                     <Item ModelType="Property" Tag="Title Visibility" DisplayName="Title Visibility">
                         <Parameter ParType="bool" ParRole="0" ParValue="1"/>
@@ -772,10 +772,10 @@
                     <Item ModelType="Property" Tag="Nbins" DisplayName="Nbins">
                         <Parameter ParType="int" ParRole="0" ParValue="100"/>
                     </Item>
-                    <Item ModelType="Property" Tag="Min" DisplayName="Min">
+                    <Item ModelType="Property" Tag="Min [deg]" DisplayName="Min [deg]">
                         <Parameter ParType="double" ParRole="0" ParValue="1.000000000000e+00"/>
                     </Item>
-                    <Item ModelType="Property" Tag="Max" DisplayName="Max">
+                    <Item ModelType="Property" Tag="Max [deg]" DisplayName="Max [deg]">
                         <Parameter ParType="double" ParRole="0" ParValue="9.145674696391e+04"/>
                     </Item>
                     <Item ModelType="Property" Tag="title" DisplayName="title">
@@ -803,16 +803,16 @@
                             <Parameter ParType="QString" ParRole="0" ParValue="RectangleMask1"/>
                         </Item>
                         <Item ModelType="Property" Tag="xlow" DisplayName="xlow">
-                            <Parameter ParType="double" ParRole="0" ParValue="5.918500435920e+02"/>
+                            <Parameter ParType="double" ParRole="0" ParValue="1.017982074978e+02"/>
                         </Item>
                         <Item ModelType="Property" Tag="ylow" DisplayName="ylow">
-                            <Parameter ParType="double" ParRole="0" ParValue="4.253970189702e+02"/>
+                            <Parameter ParType="double" ParRole="0" ParValue="7.316828726287e+01"/>
                         </Item>
                         <Item ModelType="Property" Tag="xup" DisplayName="xup">
-                            <Parameter ParType="double" ParRole="0" ParValue="6.089555361813e+02"/>
+                            <Parameter ParType="double" ParRole="0" ParValue="1.047403522232e+02"/>
                         </Item>
                         <Item ModelType="Property" Tag="yup" DisplayName="yup">
-                            <Parameter ParType="double" ParRole="0" ParValue="6.232560975610e+02"/>
+                            <Parameter ParType="double" ParRole="0" ParValue="1.072000487805e+02"/>
                         </Item>
                     </Item>
                     <Item ModelType="RegionOfInterest" Tag="Mask Tag" DisplayName="RegionOfInterest">
@@ -826,16 +826,16 @@
                             <Parameter ParType="QString" ParRole="0" ParValue="RegionOfInterest"/>
                         </Item>
                         <Item ModelType="Property" Tag="xlow" DisplayName="xlow">
-                            <Parameter ParType="double" ParRole="0" ParValue="5.114542284220e+02"/>
+                            <Parameter ParType="double" ParRole="0" ParValue="8.797012728858e+01"/>
                         </Item>
                         <Item ModelType="Property" Tag="ylow" DisplayName="ylow">
-                            <Parameter ParType="double" ParRole="0" ParValue="4.169173441734e+02"/>
+                            <Parameter ParType="double" ParRole="0" ParValue="7.170978319782e+01"/>
                         </Item>
                         <Item ModelType="Property" Tag="xup" DisplayName="xup">
-                            <Parameter ParType="double" ParRole="0" ParValue="6.961935483871e+02"/>
+                            <Parameter ParType="double" ParRole="0" ParValue="1.197452903226e+02"/>
                         </Item>
                         <Item ModelType="Property" Tag="yup" DisplayName="yup">
-                            <Parameter ParType="double" ParRole="0" ParValue="8.027425474255e+02"/>
+                            <Parameter ParType="double" ParRole="0" ParValue="1.380717181572e+02"/>
                         </Item>
                     </Item>
                 </Item>
@@ -941,9 +941,6 @@
                         <Item ModelType="Property" Tag="ypos" DisplayName="ypos">
                             <Parameter ParType="double" ParRole="0" ParValue="6.535000000000e+02"/>
                         </Item>
-                        <Item ModelType="Property" Tag="Approximation" DisplayName="Approximation">
-                            <Parameter ParType="ComboProperty" ParRole="0" ParValue="0" ParExt="Decoupling Approximation;Size Space Coupling Approximation"/>
-                        </Item>
                         <Item ModelType="Property" Tag="TotalParticleDensity" DisplayName="TotalParticleDensity">
                             <Parameter ParType="double" ParRole="0" ParValue="9.988758982519e-04"/>
                         </Item>
@@ -1004,6 +1001,9 @@
                             </Item>
                             <Item ModelType="Property" Tag="ypos" DisplayName="ypos">
                                 <Parameter ParType="double" ParRole="0" ParValue="8.970000000000e+02"/>
+                            </Item>
+                            <Item ModelType="Property" Tag="PositionVariance" DisplayName="PositionVariance">
+                                <Parameter ParType="double" ParRole="0" ParValue="0.000000000000e+00"/>
                             </Item>
                             <Item ModelType="GroupProperty" Tag="LatticeType" DisplayName="LatticeType">
                                 <Parameter ParType="ComboProperty" ParRole="0" ParValue="1" ParExt="Basic;Hexagonal;Square"/>
@@ -1314,10 +1314,10 @@
                             <Item ModelType="Property" Tag="Nbins" DisplayName="Nbins">
                                 <Parameter ParType="int" ParRole="0" ParValue="100"/>
                             </Item>
-                            <Item ModelType="Property" Tag="Min" DisplayName="Min">
+                            <Item ModelType="Property" Tag="Min [deg]" DisplayName="Min [deg]">
                                 <Parameter ParType="double" ParRole="0" ParValue="-1.000000000000e+00"/>
                             </Item>
-                            <Item ModelType="Property" Tag="Max" DisplayName="Max">
+                            <Item ModelType="Property" Tag="Max [deg]" DisplayName="Max [deg]">
                                 <Parameter ParType="double" ParRole="0" ParValue="1.000000000000e+00"/>
                             </Item>
                             <Item ModelType="Property" Tag="title" DisplayName="title">
@@ -1334,10 +1334,10 @@
                             <Item ModelType="Property" Tag="Nbins" DisplayName="Nbins">
                                 <Parameter ParType="int" ParRole="0" ParValue="100"/>
                             </Item>
-                            <Item ModelType="Property" Tag="Min" DisplayName="Min">
+                            <Item ModelType="Property" Tag="Min [deg]" DisplayName="Min [deg]">
                                 <Parameter ParType="double" ParRole="0" ParValue="0.000000000000e+00"/>
                             </Item>
-                            <Item ModelType="Property" Tag="Max" DisplayName="Max">
+                            <Item ModelType="Property" Tag="Max [deg]" DisplayName="Max [deg]">
                                 <Parameter ParType="double" ParRole="0" ParValue="2.000000000000e+00"/>
                             </Item>
                             <Item ModelType="Property" Tag="title" DisplayName="title">
@@ -1378,11 +1378,11 @@
                             <Item ModelType="Property" Tag="Nbins" DisplayName="Nbins">
                                 <Parameter ParType="int" ParRole="0" ParValue="981"/>
                             </Item>
-                            <Item ModelType="Property" Tag="Min" DisplayName="Min">
+                            <Item ModelType="Property" Tag="Min [deg]" DisplayName="Min [deg]">
                                 <Parameter ParType="double" ParRole="0" ParValue="0.000000000000e+00"/>
                             </Item>
-                            <Item ModelType="Property" Tag="Max" DisplayName="Width">
-                                <Parameter ParType="double" ParRole="0" ParValue="1.687320000000e+02"/>
+                            <Item ModelType="Property" Tag="Max [deg]" DisplayName="Width [mm]">
+                                <Parameter ParType="double" ParRole="0" ParValue="2.000000000000e+01"/>
                             </Item>
                             <Item ModelType="Property" Tag="title" DisplayName="title">
                                 <Parameter ParType="QString" ParRole="0" ParValue=""/>
@@ -1398,11 +1398,11 @@
                             <Item ModelType="Property" Tag="Nbins" DisplayName="Nbins">
                                 <Parameter ParType="int" ParRole="0" ParValue="1043"/>
                             </Item>
-                            <Item ModelType="Property" Tag="Min" DisplayName="Min">
+                            <Item ModelType="Property" Tag="Min [deg]" DisplayName="Min [deg]">
                                 <Parameter ParType="double" ParRole="0" ParValue="0.000000000000e+00"/>
                             </Item>
-                            <Item ModelType="Property" Tag="Max" DisplayName="Height">
-                                <Parameter ParType="double" ParRole="0" ParValue="1.793960000000e+02"/>
+                            <Item ModelType="Property" Tag="Max [deg]" DisplayName="Height [mm]">
+                                <Parameter ParType="double" ParRole="0" ParValue="2.000000000000e+01"/>
                             </Item>
                             <Item ModelType="Property" Tag="title" DisplayName="title">
                                 <Parameter ParType="QString" ParRole="0" ParValue=""/>
@@ -1490,10 +1490,10 @@
                     <Item ModelType="Property" Tag="Nbins" DisplayName="Nbins">
                         <Parameter ParType="int" ParRole="0" ParValue="981"/>
                     </Item>
-                    <Item ModelType="Property" Tag="Min" DisplayName="Min">
+                    <Item ModelType="Property" Tag="Min [deg]" DisplayName="Min [deg]">
                         <Parameter ParType="double" ParRole="0" ParValue="0.000000000000e+00"/>
                     </Item>
-                    <Item ModelType="Property" Tag="Max" DisplayName="Max">
+                    <Item ModelType="Property" Tag="Max [deg]" DisplayName="Max [deg]">
                         <Parameter ParType="double" ParRole="0" ParValue="1.687320000000e+02"/>
                     </Item>
                     <Item ModelType="Property" Tag="title" DisplayName="title">
@@ -1510,10 +1510,10 @@
                     <Item ModelType="Property" Tag="Nbins" DisplayName="Nbins">
                         <Parameter ParType="int" ParRole="0" ParValue="1043"/>
                     </Item>
-                    <Item ModelType="Property" Tag="Min" DisplayName="Min">
+                    <Item ModelType="Property" Tag="Min [deg]" DisplayName="Min [deg]">
                         <Parameter ParType="double" ParRole="0" ParValue="0.000000000000e+00"/>
                     </Item>
-                    <Item ModelType="Property" Tag="Max" DisplayName="Max">
+                    <Item ModelType="Property" Tag="Max [deg]" DisplayName="Max [deg]">
                         <Parameter ParType="double" ParRole="0" ParValue="1.793960000000e+02"/>
                     </Item>
                     <Item ModelType="Property" Tag="title" DisplayName="title">
@@ -1530,10 +1530,10 @@
                     <Item ModelType="Property" Tag="Nbins" DisplayName="Nbins">
                         <Parameter ParType="int" ParRole="0" ParValue="100"/>
                     </Item>
-                    <Item ModelType="Property" Tag="Min" DisplayName="Min">
+                    <Item ModelType="Property" Tag="Min [deg]" DisplayName="Min [deg]">
                         <Parameter ParType="double" ParRole="0" ParValue="1.000000000000e+00"/>
                     </Item>
-                    <Item ModelType="Property" Tag="Max" DisplayName="Max">
+                    <Item ModelType="Property" Tag="Max [deg]" DisplayName="Max [deg]">
                         <Parameter ParType="double" ParRole="0" ParValue="2.270260978393e+04"/>
                     </Item>
                     <Item ModelType="Property" Tag="title" DisplayName="title">
@@ -2397,9 +2397,6 @@
                         <Item ModelType="Property" Tag="ypos" DisplayName="ypos">
                             <Parameter ParType="double" ParRole="0" ParValue="6.535000000000e+02"/>
                         </Item>
-                        <Item ModelType="Property" Tag="Approximation" DisplayName="Approximation">
-                            <Parameter ParType="ComboProperty" ParRole="0" ParValue="0" ParExt="Decoupling Approximation;Size Space Coupling Approximation"/>
-                        </Item>
                         <Item ModelType="Property" Tag="TotalParticleDensity" DisplayName="TotalParticleDensity">
                             <Parameter ParType="double" ParRole="0" ParValue="9.991704358604e-04"/>
                         </Item>
@@ -2460,6 +2457,9 @@
                             </Item>
                             <Item ModelType="Property" Tag="ypos" DisplayName="ypos">
                                 <Parameter ParType="double" ParRole="0" ParValue="8.970000000000e+02"/>
+                            </Item>
+                            <Item ModelType="Property" Tag="PositionVariance" DisplayName="PositionVariance">
+                                <Parameter ParType="double" ParRole="0" ParValue="0.000000000000e+00"/>
                             </Item>
                             <Item ModelType="GroupProperty" Tag="LatticeType" DisplayName="LatticeType">
                                 <Parameter ParType="ComboProperty" ParRole="0" ParValue="1" ParExt="Basic;Hexagonal;Square"/>
@@ -2770,10 +2770,10 @@
                             <Item ModelType="Property" Tag="Nbins" DisplayName="Nbins">
                                 <Parameter ParType="int" ParRole="0" ParValue="100"/>
                             </Item>
-                            <Item ModelType="Property" Tag="Min" DisplayName="Min">
+                            <Item ModelType="Property" Tag="Min [deg]" DisplayName="Min [deg]">
                                 <Parameter ParType="double" ParRole="0" ParValue="-1.000000000000e+00"/>
                             </Item>
-                            <Item ModelType="Property" Tag="Max" DisplayName="Max">
+                            <Item ModelType="Property" Tag="Max [deg]" DisplayName="Max [deg]">
                                 <Parameter ParType="double" ParRole="0" ParValue="1.000000000000e+00"/>
                             </Item>
                             <Item ModelType="Property" Tag="title" DisplayName="title">
@@ -2790,10 +2790,10 @@
                             <Item ModelType="Property" Tag="Nbins" DisplayName="Nbins">
                                 <Parameter ParType="int" ParRole="0" ParValue="100"/>
                             </Item>
-                            <Item ModelType="Property" Tag="Min" DisplayName="Min">
+                            <Item ModelType="Property" Tag="Min [deg]" DisplayName="Min [deg]">
                                 <Parameter ParType="double" ParRole="0" ParValue="0.000000000000e+00"/>
                             </Item>
-                            <Item ModelType="Property" Tag="Max" DisplayName="Max">
+                            <Item ModelType="Property" Tag="Max [deg]" DisplayName="Max [deg]">
                                 <Parameter ParType="double" ParRole="0" ParValue="2.000000000000e+00"/>
                             </Item>
                             <Item ModelType="Property" Tag="title" DisplayName="title">
@@ -2882,11 +2882,11 @@
                             <Item ModelType="Property" Tag="Nbins" DisplayName="Nbins">
                                 <Parameter ParType="int" ParRole="0" ParValue="981"/>
                             </Item>
-                            <Item ModelType="Property" Tag="Min" DisplayName="Min">
+                            <Item ModelType="Property" Tag="Min [deg]" DisplayName="Min [deg]">
                                 <Parameter ParType="double" ParRole="0" ParValue="0.000000000000e+00"/>
                             </Item>
-                            <Item ModelType="Property" Tag="Max" DisplayName="Width">
-                                <Parameter ParType="double" ParRole="0" ParValue="1.687320000000e+02"/>
+                            <Item ModelType="Property" Tag="Max [deg]" DisplayName="Width [mm]">
+                                <Parameter ParType="double" ParRole="0" ParValue="2.000000000000e+01"/>
                             </Item>
                             <Item ModelType="Property" Tag="title" DisplayName="title">
                                 <Parameter ParType="QString" ParRole="0" ParValue=""/>
@@ -2902,11 +2902,11 @@
                             <Item ModelType="Property" Tag="Nbins" DisplayName="Nbins">
                                 <Parameter ParType="int" ParRole="0" ParValue="1043"/>
                             </Item>
-                            <Item ModelType="Property" Tag="Min" DisplayName="Min">
+                            <Item ModelType="Property" Tag="Min [deg]" DisplayName="Min [deg]">
                                 <Parameter ParType="double" ParRole="0" ParValue="0.000000000000e+00"/>
                             </Item>
-                            <Item ModelType="Property" Tag="Max" DisplayName="Height">
-                                <Parameter ParType="double" ParRole="0" ParValue="1.793960000000e+02"/>
+                            <Item ModelType="Property" Tag="Max [deg]" DisplayName="Height [mm]">
+                                <Parameter ParType="double" ParRole="0" ParValue="2.000000000000e+01"/>
                             </Item>
                             <Item ModelType="Property" Tag="title" DisplayName="title">
                                 <Parameter ParType="QString" ParRole="0" ParValue=""/>
@@ -2994,10 +2994,10 @@
                     <Item ModelType="Property" Tag="Nbins" DisplayName="Nbins">
                         <Parameter ParType="int" ParRole="0" ParValue="186"/>
                     </Item>
-                    <Item ModelType="Property" Tag="Min" DisplayName="Min">
+                    <Item ModelType="Property" Tag="Min [deg]" DisplayName="Min [deg]">
                         <Parameter ParType="double" ParRole="0" ParValue="8.789200000000e+01"/>
                     </Item>
-                    <Item ModelType="Property" Tag="Max" DisplayName="Max">
+                    <Item ModelType="Property" Tag="Max [deg]" DisplayName="Max [deg]">
                         <Parameter ParType="double" ParRole="0" ParValue="1.198840000000e+02"/>
                     </Item>
                     <Item ModelType="Property" Tag="title" DisplayName="title">
@@ -3014,10 +3014,10 @@
                     <Item ModelType="Property" Tag="Nbins" DisplayName="Nbins">
                         <Parameter ParType="int" ParRole="0" ParValue="387"/>
                     </Item>
-                    <Item ModelType="Property" Tag="Min" DisplayName="Min">
+                    <Item ModelType="Property" Tag="Min [deg]" DisplayName="Min [deg]">
                         <Parameter ParType="double" ParRole="0" ParValue="7.155200000000e+01"/>
                     </Item>
-                    <Item ModelType="Property" Tag="Max" DisplayName="Max">
+                    <Item ModelType="Property" Tag="Max [deg]" DisplayName="Max [deg]">
                         <Parameter ParType="double" ParRole="0" ParValue="1.381160000000e+02"/>
                     </Item>
                     <Item ModelType="Property" Tag="title" DisplayName="title">
@@ -3034,10 +3034,10 @@
                     <Item ModelType="Property" Tag="Nbins" DisplayName="Nbins">
                         <Parameter ParType="int" ParRole="0" ParValue="100"/>
                     </Item>
-                    <Item ModelType="Property" Tag="Min" DisplayName="Min">
+                    <Item ModelType="Property" Tag="Min [deg]" DisplayName="Min [deg]">
                         <Parameter ParType="double" ParRole="0" ParValue="7.037880556120e-01"/>
                     </Item>
-                    <Item ModelType="Property" Tag="Max" DisplayName="Max">
+                    <Item ModelType="Property" Tag="Max [deg]" DisplayName="Max [deg]">
                         <Parameter ParType="double" ParRole="0" ParValue="7.741668611732e+03"/>
                     </Item>
                     <Item ModelType="Property" Tag="title" DisplayName="title">
@@ -3084,10 +3084,10 @@
                         <Item ModelType="Property" Tag="Nbins" DisplayName="Nbins">
                             <Parameter ParType="int" ParRole="0" ParValue="186"/>
                         </Item>
-                        <Item ModelType="Property" Tag="Min" DisplayName="Min">
+                        <Item ModelType="Property" Tag="Min [deg]" DisplayName="Min [deg]">
                             <Parameter ParType="double" ParRole="0" ParValue="8.789200000000e+01"/>
                         </Item>
-                        <Item ModelType="Property" Tag="Max" DisplayName="Max">
+                        <Item ModelType="Property" Tag="Max [deg]" DisplayName="Max [deg]">
                             <Parameter ParType="double" ParRole="0" ParValue="1.198840000000e+02"/>
                         </Item>
                         <Item ModelType="Property" Tag="title" DisplayName="title">
@@ -3104,10 +3104,10 @@
                         <Item ModelType="Property" Tag="Nbins" DisplayName="Nbins">
                             <Parameter ParType="int" ParRole="0" ParValue="387"/>
                         </Item>
-                        <Item ModelType="Property" Tag="Min" DisplayName="Min">
+                        <Item ModelType="Property" Tag="Min [deg]" DisplayName="Min [deg]">
                             <Parameter ParType="double" ParRole="0" ParValue="7.155200000000e+01"/>
                         </Item>
-                        <Item ModelType="Property" Tag="Max" DisplayName="Max">
+                        <Item ModelType="Property" Tag="Max [deg]" DisplayName="Max [deg]">
                             <Parameter ParType="double" ParRole="0" ParValue="1.381160000000e+02"/>
                         </Item>
                         <Item ModelType="Property" Tag="title" DisplayName="title">
@@ -3124,10 +3124,10 @@
                         <Item ModelType="Property" Tag="Nbins" DisplayName="Nbins">
                             <Parameter ParType="int" ParRole="0" ParValue="100"/>
                         </Item>
-                        <Item ModelType="Property" Tag="Min" DisplayName="Min">
+                        <Item ModelType="Property" Tag="Min [deg]" DisplayName="Min [deg]">
                             <Parameter ParType="double" ParRole="0" ParValue="7.037880556120e-01"/>
                         </Item>
-                        <Item ModelType="Property" Tag="Max" DisplayName="Max">
+                        <Item ModelType="Property" Tag="Max [deg]" DisplayName="Max [deg]">
                             <Parameter ParType="double" ParRole="0" ParValue="7.741668611732e+03"/>
                         </Item>
                         <Item ModelType="Property" Tag="title" DisplayName="title">
@@ -3961,7 +3961,7 @@
             </Item>
             <Item ModelType="FitSuite" Tag="Fit Suite" DisplayName="FitSuite">
                 <Item ModelType="Property" Tag="Update interval" DisplayName="Update interval">
-                    <Parameter ParType="int" ParRole="0" ParValue="1"/>
+                    <Parameter ParType="int" ParRole="0" ParValue="10"/>
                 </Item>
                 <Item ModelType="Property" Tag="Number of iterations" DisplayName="Number of iterations">
                     <Parameter ParType="int" ParRole="0" ParValue="62"/>
@@ -4039,16 +4039,11 @@
                             </Item>
                         </Item>
                     </Item>
-                    <Item ModelType="Property" Tag="Intensity function" DisplayName="Intensity function">
-                        <Parameter ParType="ComboProperty" ParRole="0" ParValue="0" ParExt="None;sqrt;log"/>
+                    <Item ModelType="Property" Tag="Objective metric" DisplayName="Objective metric">
+                        <Parameter ParType="ComboProperty" ParRole="0" ParValue="2" ParExt="chi2;log;poisson-like;reldiff;rq4"/>
                     </Item>
-                    <Item ModelType="GroupProperty" Tag="Variance" DisplayName="Variance">
-                        <Parameter ParType="ComboProperty" ParRole="0" ParValue="1" ParExt="Constant;Simulation value based"/>
-                        <Item ModelType="VarianceSimFunction" Tag="Item tag" DisplayName="VarianceSimFunction">
-                            <Item ModelType="Property" Tag="epsilon" DisplayName="epsilon">
-                                <Parameter ParType="double" ParRole="0" ParValue="1.000000000000e+00"/>
-                            </Item>
-                        </Item>
+                    <Item ModelType="Property" Tag="Norm function" DisplayName="Norm function">
+                        <Parameter ParType="ComboProperty" ParRole="0" ParValue="1" ParExt="l1;l2"/>
                     </Item>
                 </Item>
             </Item>
